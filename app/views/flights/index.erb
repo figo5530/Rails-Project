@@ -1,10 +1,10 @@
 
 <% @flights.each do |flight| %>
-    <li>Flight Number: <%= flight.flight_number %></li>
-    <li>From: <%= flight.from %></li>
-    <li>To: <%= flight.to %></li>
-    <li>Departure Time: <%= flight.departure_time %></li>
-    <li>Arrival Time: <%= flight.arrival_time %></li>
-    <li>Flight Duration: <%= flight.flight_duration %></li>
-    <li>Price: <%= flight.price %></li>
+    <div>
+        <ul>
+            <li>From: <%= flight.from %> To: <%= flight.to %></li>
+            <li>Departure Time: <%= flight.departure_time %> Arrival Time: <%= flight.arrival_time %></li>
+            <%= link_to 'Flight Details', flight_path(flight) %>
+        </ul>
+    </div>
 <% end %>

@@ -1,0 +1,25 @@
+
+<%= @flight.flight_number %><br>
+<br>
+
+<div>
+    <%= @flight.departure_time %>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <%= @flight.arrival_time %>
+</div>
+<div>
+    <%= @flight.from %>
+    ------<%= @flight.flight_duration %>------
+    <%= @flight.to %>
+</div>
+<br>
+
+<%# <% if session[:user_id] %>
+<%  %>
+<%= button_to 'Book', new_user_trip_path %>
+    
+<% else %>
+<%= button_to 'Book', new_user_trip_path %>
+    
+<% end %> %>
+
