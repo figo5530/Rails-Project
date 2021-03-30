@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_30_043114) do
+ActiveRecord::Schema.define(version: 2021_03_30_151209) do
+
+  create_table "teams", force: :cascade do |t|
+    t.string "name"
+    t.integer "game_play", default: 0
+    t.integer "wins", default: 0
+    t.integer "draws", default: 0
+    t.integer "losses", default: 0
+    t.integer "points", default: 0
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
