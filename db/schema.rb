@@ -12,14 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2021_03_30_151209) do
 
-  create_table "teams", force: :cascade do |t|
-    t.string "name"
-    t.integer "game_play", default: 0
-    t.integer "wins", default: 0
-    t.integer "draws", default: 0
-    t.integer "losses", default: 0
-    t.integer "points", default: 0
+  create_table "trips", force: :cascade do |t|
     t.integer "user_id"
+    t.integer "flight_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

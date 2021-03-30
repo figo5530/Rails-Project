@@ -1,40 +1,40 @@
-class TeamsController < ApplicationController
+class TripsController < ApplicationController
     def index
         if params[:user_id]
             @user = User.find(params[:user_id])
-            @teams = User.find(params[:user_id]).teams
+            @trips = User.find(params[:user_id]).trips
         else
-            @teams = Team.all
+            @trips = Trip.all
         end
     end
     
     def new
         if params[:user_id]
             @user = User.find(params[:user_id])
-            @team = @user.teams.new
+            @trip = @user.trips.new
         else
-            @team = Team.new
+            @trip = Trip.new
         end
     end
 
     def show
         if params[:user_id]
             @user = User.find_by(id: params[:user_id])
-            @team = @user.teams.find_by(id: params[:id])
-            if @team.nil?
-                redirect_to user_teams_path(@user), alert: "Team not found"
+            @trip = @user.trips.find_by(id: params[:id])
+            if @trip.nil?
+                redirect_to user_trips_path(@user), alert: "Trip not found"
             end
         else
-            @team = Team.find(params[:id])
+            @trip = Trip.find(params[:id])
         end
       end
 
     def create
         if params[:user_id]
             @user = User.find_by(id: params[:user_id])
-            @team = @user.teams.new(team_params)
-            if @team.save
-                redirect_to user_teams_path
+            @trip = @user.trips.new(trip_params)
+            if @trip.save
+                redirect_to user_trips_path
             else
                 render :new
             end
@@ -46,14 +46,14 @@ class TeamsController < ApplicationController
     def edit
         if params[:user_id]
             @user = User.find_by(id: params[:user_id])
-            @team = @user.teams.find_by(id: params[:id])
+            @trip = @user.trips.find_by(id: params[:id])
         else
-            @team = Team.find_by(id: params[:id])
+            @trip = Trip.find_by(id: params[:id])
         end
     end
 
     private
-    def team_params
-        params.require(:team).permit(:name, :user_id)
+    def trip_params
+        params.require(:trip).permit(:name, :user_id)
     end
 end

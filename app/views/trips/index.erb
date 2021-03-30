@@ -1,0 +1,15 @@
+<h1>Welcome <%= @user.username %></h1>
+
+<% if @user.trips %>
+    
+    <% @user.trips.each do |t| %>
+        <ul>
+            <%= link_to 'Edit Trip', edit_user_trip_path(@user, t)%>
+        </ul>
+    <% end %>
+    
+<% else %>
+    <h2>You have no trips, go <%= link_to 'create', new_user_trip_path(@user) %> one</h2>
+<% end %>
+    <h3><%= link_to 'Create new trip', new_user_trip_path(@user) %></h3>
+
