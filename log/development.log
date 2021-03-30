@@ -44,3 +44,57 @@ Migrating to CreateUsers (20210330043114)
   [1m[36mTRANSACTION (14.4ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/new" for ::1 at 2021-03-30 00:35:14 -0400
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.erb within layouts/application
+  Rendered users/new.erb within layouts/application (Duration: 267.6ms | Allocations: 7492)
+Started GET "/users/new" for ::1 at 2021-03-30 00:35:17 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.erb within layouts/application
+  Rendered users/new.erb within layouts/application (Duration: 1.7ms | Allocations: 1093)
+[Webpacker] Compiling...
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /mnt/c/Users/FIGO/Development/code/practice/Rails-Project/public/packs
+[Webpacker] Hash: 3c71734446225f9abd66
+Version: webpack 4.46.0
+Time: 9729ms
+Built at: 03/30/2021 12:35:37 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-3e69d53dc5ee6f295091.js    323 KiB  application  [emitted] [immutable]  application
+js/application-3e69d53dc5ee6f295091.js.map    340 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-3e69d53dc5ee6f295091.js js/application-3e69d53dc5ee6f295091.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 573 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 32 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 19300.4ms | Allocations: 128575)
+Completed 200 OK in 19302ms (Views: 19301.5ms | ActiveRecord: 0.0ms | Allocations: 128935)
+
+
+[Webpacker] Compiled all packs in /mnt/c/Users/FIGO/Development/code/practice/Rails-Project/public/packs
+[Webpacker] Hash: 3c71734446225f9abd66
+Version: webpack 4.46.0
+Time: 9810ms
+Built at: 03/30/2021 12:35:37 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-3e69d53dc5ee6f295091.js    323 KiB  application  [emitted] [immutable]  application
+js/application-3e69d53dc5ee6f295091.js.map    340 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-3e69d53dc5ee6f295091.js js/application-3e69d53dc5ee6f295091.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 573 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 32 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 21821.2ms | Allocations: 175145)
+Completed 200 OK in 21997ms (Views: 21849.0ms | ActiveRecord: 8.6ms | Allocations: 182335)
+
+
