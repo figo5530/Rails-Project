@@ -516,3 +516,163 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 157ms (Views: 146.3ms | ActiveRecord: 0.0ms | Allocations: 7463)
 
 
+Started GET "/signin" for ::1 at 2021-03-30 00:51:17 -0400
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.erb within layouts/application
+  Rendered sessions/new.erb within layouts/application (Duration: 8.2ms | Allocations: 1199)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1233.5ms | Allocations: 13881)
+Completed 200 OK in 1305ms (Views: 1256.6ms | ActiveRecord: 0.0ms | Allocations: 16601)
+
+
+Started POST "/signin" for ::1 at 2021-03-30 00:51:21 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/signin"):
+  
+Started GET "/signin" for ::1 at 2021-03-30 00:51:28 -0400
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.erb within layouts/application
+  Rendered sessions/new.erb within layouts/application (Duration: 0.6ms | Allocations: 393)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 129.5ms | Allocations: 6355)
+Completed 200 OK in 131ms (Views: 130.7ms | ActiveRecord: 0.0ms | Allocations: 6730)
+
+
+Started GET "/signin" for ::1 at 2021-03-30 00:51:44 -0400
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.erb within layouts/application
+  Rendered sessions/new.erb within layouts/application (Duration: 1.5ms | Allocations: 834)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 188.4ms | Allocations: 6758)
+Completed 200 OK in 190ms (Views: 189.6ms | Allocations: 7274)
+
+
+Started POST "/signin" for ::1 at 2021-03-30 00:51:49 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"test", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.erb within layouts/application
+  Rendered sessions/new.erb within layouts/application (Duration: 0.9ms | Allocations: 397)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 151.6ms | Allocations: 6371)
+Completed 200 OK in 443ms (Views: 152.8ms | ActiveRecord: 10.3ms | Allocations: 13031)
+
+
+Started POST "/signin" for ::1 at 2021-03-30 00:51:55 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"test", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 250ms (ActiveRecord: 1.4ms | Allocations: 871)
+
+
+Started GET "/users/1" for ::1 at 2021-03-30 00:51:55 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 3.1ms | Allocations: 163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 151.5ms | Allocations: 6090)
+Completed 200 OK in 171ms (Views: 157.2ms | ActiveRecord: 1.2ms | Allocations: 7720)
+
+
+Started GET "/logout" for ::1 at 2021-03-30 00:51:59 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 231)
+
+
+Started GET "/" for ::1 at 2021-03-30 00:51:59 -0400
+Processing by UsersController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/home.erb within layouts/application
+  Rendered users/home.erb within layouts/application (Duration: 4.0ms | Allocations: 279)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 122.3ms | Allocations: 6252)
+Completed 200 OK in 131ms (Views: 123.1ms | ActiveRecord: 0.0ms | Allocations: 6763)
+
+
+Started GET "/signin" for ::1 at 2021-03-30 00:52:01 -0400
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.erb within layouts/application
+  Rendered sessions/new.erb within layouts/application (Duration: 0.6ms | Allocations: 395)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 129.1ms | Allocations: 6357)
+Completed 200 OK in 130ms (Views: 130.0ms | ActiveRecord: 0.0ms | Allocations: 6732)
+
+
+Started POST "/signin" for ::1 at 2021-03-30 00:52:05 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"test1", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "test1"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 238ms (ActiveRecord: 1.6ms | Allocations: 891)
+
+
+Started GET "/users/2" for ::1 at 2021-03-30 00:52:05 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 139.9ms | Allocations: 6016)
+Completed 200 OK in 146ms (Views: 141.1ms | ActiveRecord: 1.7ms | Allocations: 6957)
+
+
+Started GET "/logout" for ::1 at 2021-03-30 00:52:09 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 229)
+
+
+Started GET "/" for ::1 at 2021-03-30 00:52:09 -0400
+Processing by UsersController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/home.erb within layouts/application
+  Rendered users/home.erb within layouts/application (Duration: 0.3ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 117.6ms | Allocations: 6106)
+Completed 200 OK in 119ms (Views: 118.4ms | ActiveRecord: 0.0ms | Allocations: 6488)
+
+
+Started GET "/signin" for ::1 at 2021-03-30 00:52:11 -0400
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.erb within layouts/application
+  Rendered sessions/new.erb within layouts/application (Duration: 0.5ms | Allocations: 387)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 144.6ms | Allocations: 6348)
+Completed 200 OK in 146ms (Views: 145.4ms | ActiveRecord: 0.0ms | Allocations: 6722)
+
+
+Started POST "/signin" for ::1 at 2021-03-30 00:52:13 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"test", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.erb within layouts/application
+  Rendered sessions/new.erb within layouts/application (Duration: 0.6ms | Allocations: 382)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 133.6ms | Allocations: 6354)
+Completed 200 OK in 372ms (Views: 134.8ms | ActiveRecord: 1.5ms | Allocations: 7355)
+
+
