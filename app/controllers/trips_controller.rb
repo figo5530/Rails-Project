@@ -9,12 +9,7 @@ class TripsController < ApplicationController
     end
     
     def new
-        # if params[:user_id]
-        #     @user = User.find(params[:user_id])
-        #     @trip = @user.trips.new
-        # else
-        #     @trip = Trip.new
-        # end
+        #
         if params[:flight_id]
             @flight = Flight.find_by(params[:flight_id])
             @trip = @flight.trips.build
@@ -24,35 +19,17 @@ class TripsController < ApplicationController
     end
 
     def show
-        if params[:user_id]
-            @user = User.find_by(id: params[:user_id])
-            @trip = @user.trips.find_by(id: params[:id])
-            if @trip.nil?
-                redirect_to user_trips_path(@user), alert: "Trip not found"
-            end
-        else
-            @trip = Trip.find(params[:id])
-        end
+        #
+        @trip = Trip.find_by(id: params[:id])
       end
 
     def create
-        # if params[:user_id]
-        #     @user = User.find_by(id: params[:user_id])
-        #     @trip = @user.trips.new(trip_params)
-        #     if @trip.save
-        #         redirect_to user_trips_path
-        #     else
-        #         render :new
-        #     end
-        # else
-        #    redirect_to '/'
-        # end
-        binding.pry
-        @trip = Trip.create(trip_params)
+        #
+        @trip = Trip.new(trip_params)
         @trip.user = current_user
         @trip.flight_id = params[:flight_id]
         @trip.save
-        redirect_to trip_path(@trip)
+        redirect_to flight_trip_path(@trip.flight, @trip)
     end
 
     def edit
