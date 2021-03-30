@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_30_151209) do
+ActiveRecord::Schema.define(version: 2021_03_30_192744) do
+
+  create_table "flights", force: :cascade do |t|
+    t.string "flight_number"
+    t.string "departure_time"
+    t.string "arrival_time"
+    t.string "flight_duration"
+    t.integer "price"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "trips", force: :cascade do |t|
     t.integer "user_id"
