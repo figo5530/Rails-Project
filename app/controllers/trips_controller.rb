@@ -9,11 +9,17 @@ class TripsController < ApplicationController
     end
     
     def new
-        if params[:user_id]
-            @user = User.find(params[:user_id])
-            @trip = @user.trips.new
+        # if params[:user_id]
+        #     @user = User.find(params[:user_id])
+        #     @trip = @user.trips.new
+        # else
+        #     @trip = Trip.new
+        # end
+        if params[:flight_id]
+            @flight = Flight.find_by(params[:flight_id])
+            @trip = @flight.trips.build
         else
-            @trip = Trip.new
+            
         end
     end
 
@@ -30,17 +36,23 @@ class TripsController < ApplicationController
       end
 
     def create
-        if params[:user_id]
-            @user = User.find_by(id: params[:user_id])
-            @trip = @user.trips.new(trip_params)
-            if @trip.save
-                redirect_to user_trips_path
-            else
-                render :new
-            end
-        else
-           redirect_to '/'
-        end
+        # if params[:user_id]
+        #     @user = User.find_by(id: params[:user_id])
+        #     @trip = @user.trips.new(trip_params)
+        #     if @trip.save
+        #         redirect_to user_trips_path
+        #     else
+        #         render :new
+        #     end
+        # else
+        #    redirect_to '/'
+        # end
+        binding.pry
+        @trip = Trip.create(trip_params)
+        @trip.user = current_user
+        @trip.flight_id = params[:flight_id]
+        @trip.save
+        redirect_to trip_path(@trip)
     end
 
     def edit
@@ -54,6 +66,6 @@ class TripsController < ApplicationController
 
     private
     def trip_params
-        params.require(:trip).permit(:name, :user_id)
+        params.require(:trip).permit(:traveler_first_name, :traveler_last_name, :traveler_gender, :traveler_contact_info, :user_id)
     end
 end

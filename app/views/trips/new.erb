@@ -1,6 +1,14 @@
-<%= form_for([@user, @trip]) do |f| %>
-    <strong><%= f.label "Name your champion team!" %></strong>
+<%= form_for([@flight, @trip]) do |f| %>
+    <strong><%= f.label "Traveler Info" %></strong><br>
     <%= f.hidden_field :user_id %>
+    <%= f.label "First name" %><br>
+    <%= f.text_field :traveler_first_name %><br>
+    <%= f.label "Last name" %><br>
+    <%= f.text_field :traveler_last_name %><br>
+    <%= f.label "Gender" %><br>
+    <%= f.text_field :traveler_gender %><br>
+    <%= f.label "Contact info" %><br>
+    <%= f.text_field :traveler_contact_info %><br>
     <%= f.submit %>
 <% end %>
   
