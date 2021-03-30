@@ -41,7 +41,15 @@ class TeamsController < ApplicationController
         else
            redirect_to '/'
         end
-        
+    end
+
+    def edit
+        if params[:user_id]
+            @user = User.find_by(id: params[:user_id])
+            @team = @user.teams.find_by(id: params[:id])
+        else
+            @team = Team.find_by(id: params[:id])
+        end
     end
 
     private

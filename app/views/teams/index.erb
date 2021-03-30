@@ -10,7 +10,7 @@
             <li>Draws: <%= t.draws %></li><br>
             <li>Losses: <%= t.losses %></li><br>
             <li>Points: <%= t.points %></li><br>
-            <%= link_to 'Edit Team' %>
+            <%= link_to 'Edit Team', edit_user_team_path(@user, t)%>
         </ul>
     <% end %>
     
