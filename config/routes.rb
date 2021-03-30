@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   get '/signin', to: 'sessions#new'
   post '/signin', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'
-  get '/auth/facebook', to: 'sessions#create_with_fb'
+  get '/auth/facebook/callback', to: 'sessions#create_with_fb'
 end
