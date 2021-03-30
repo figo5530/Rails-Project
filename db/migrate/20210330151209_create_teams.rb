@@ -7,6 +7,7 @@ class CreateTeams < ActiveRecord::Migration[6.1]
       t.integer :draws, :default => 0
       t.integer :losses, :default => 0
       t.integer :points, :default => 0
+      t.integer :user_id
 
       t.timestamps
     end

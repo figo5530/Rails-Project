@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2021_03_30_151209) do
     t.integer "draws", default: 0
     t.integer "losses", default: 0
     t.integer "points", default: 0
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

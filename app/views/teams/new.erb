@@ -1,0 +1,7 @@
+<%= form_for([@user, @team]) do |f| %>
+    <strong><%= f.label "Name your champion team!" %></strong>
+    <%= f.text_field :name %>
+    <%= f.hidden_field :user_id %>
+    <%= f.submit %>
+<% end %>
+  

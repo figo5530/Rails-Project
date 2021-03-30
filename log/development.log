@@ -1341,3 +1341,1153 @@ Migrating to CreateTeams (20210330151209)
   [1m[36mActiveRecord::InternalMetadata Load (2.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/teams/new" for ::1 at 2021-03-30 11:28:27 -0400
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TeamsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 45.9ms | Allocations: 4411)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5231.4ms | Allocations: 82297)
+Completed 200 OK in 5411ms (Views: 5252.9ms | ActiveRecord: 8.0ms | Allocations: 92022)
+
+
+Started GET "/teams/new" for ::1 at 2021-03-30 11:28:48 -0400
+Processing by TeamsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 4.1ms | Allocations: 484)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 144.8ms | Allocations: 6804)
+Completed 200 OK in 166ms (Views: 158.6ms | ActiveRecord: 0.0ms | Allocations: 7946)
+
+
+Started GET "/teams/new" for ::1 at 2021-03-30 11:29:08 -0400
+Processing by TeamsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 42.2ms | Allocations: 2975)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 181.6ms | Allocations: 9191)
+Completed 200 OK in 204ms (Views: 196.5ms | ActiveRecord: 0.0ms | Allocations: 10327)
+
+
+Started GET "/teams/new" for ::1 at 2021-03-30 11:29:16 -0400
+Processing by TeamsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 5.2ms | Allocations: 533)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 145.4ms | Allocations: 6844)
+Completed 200 OK in 165ms (Views: 155.6ms | ActiveRecord: 0.0ms | Allocations: 7971)
+
+
+Started GET "/teams/new" for ::1 at 2021-03-30 11:29:31 -0400
+Processing by TeamsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 5.2ms | Allocations: 730)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 160.6ms | Allocations: 7043)
+Completed 200 OK in 180ms (Views: 171.2ms | ActiveRecord: 0.0ms | Allocations: 8180)
+
+
+Started GET "/teams/new" for ::1 at 2021-03-30 11:29:46 -0400
+Processing by TeamsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 4.4ms | Allocations: 694)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 135.1ms | Allocations: 7010)
+Completed 200 OK in 157ms (Views: 149.2ms | ActiveRecord: 0.0ms | Allocations: 8142)
+
+
+Started GET "/teams/new" for ::1 at 2021-03-30 11:33:26 -0400
+  
+SyntaxError (/mnt/c/Users/FIGO/Development/code/practice/Rails-Project/config/routes.rb:4: syntax error, unexpected do (for block)
+  resources :users, do
+                    ^~
+/mnt/c/Users/FIGO/Development/code/practice/Rails-Project/config/routes.rb:11: syntax error, unexpected end, expecting end-of-input):
+  
+config/routes.rb:4: syntax error, unexpected do (for block)
+config/routes.rb:11: syntax error, unexpected end, expecting end-of-input
+config/routes.rb:4: syntax error, unexpected do (for block)
+config/routes.rb:11: syntax error, unexpected end, expecting end-of-input
+config/routes.rb:4: syntax error, unexpected do (for block)
+config/routes.rb:11: syntax error, unexpected end, expecting end-of-input
+Started GET "/teams/new" for ::1 at 2021-03-30 11:33:38 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/teams/new"):
+  
+Started GET "/" for ::1 at 2021-03-30 11:33:45 -0400
+Processing by UsersController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/home.erb within layouts/application
+  Rendered users/home.erb within layouts/application (Duration: 5.3ms | Allocations: 226)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 131.8ms | Allocations: 6313)
+Completed 200 OK in 149ms (Views: 137.2ms | Allocations: 7270)
+
+
+Started GET "/signin" for ::1 at 2021-03-30 11:33:47 -0400
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.erb within layouts/application
+  Rendered sessions/new.erb within layouts/application (Duration: 4.7ms | Allocations: 585)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 141.1ms | Allocations: 6668)
+Completed 200 OK in 153ms (Views: 145.4ms | Allocations: 7561)
+
+
+Started POST "/auth/facebook" for ::1 at 2021-03-30 11:33:48 -0400
+Started GET "/auth/facebook/callback?code=AQAH1__rTJJs3iATtcV2A2416wT9uQr3k9ZjVnyYoNnBPVu4Tn0zN46fVZx38RERMz7QZQb-A5UmdVvKonDGAngBaS0_66bugGA2hF_iM7Odrdder3aDdZJmrzbcTy3Z2qZggF992GDvRcCeAg9emA1MJz7-PWuynfCNXZJOevWdaDyen-LakIvYkDXQ7zt7FQ8LCRVVwFs1ZSs9KRHlAic8dCTaPin4uzZd9CKxNDLwg977rhVtYVn4buedlRVLDQNWQBPprKFAuvFlrYBiCXbUpsShKCbhzoRktudJWwXznYKo_C3nEchTJIdi_bfuJYJJQ_Jlw4a2GG2K1hz1iFXw&state=448ec326aea296918c7cd47585e04e4b4a44cb4d376b9e16" for ::1 at 2021-03-30 11:33:49 -0400
+Processing by SessionsController#create_with_fb as HTML
+  Parameters: {"code"=>"AQAH1__rTJJs3iATtcV2A2416wT9uQr3k9ZjVnyYoNnBPVu4Tn0zN46fVZx38RERMz7QZQb-A5UmdVvKonDGAngBaS0_66bugGA2hF_iM7Odrdder3aDdZJmrzbcTy3Z2qZggF992GDvRcCeAg9emA1MJz7-PWuynfCNXZJOevWdaDyen-LakIvYkDXQ7zt7FQ8LCRVVwFs1ZSs9KRHlAic8dCTaPin4uzZd9CKxNDLwg977rhVtYVn4buedlRVLDQNWQBPprKFAuvFlrYBiCXbUpsShKCbhzoRktudJWwXznYKo_C3nEchTJIdi_bfuJYJJQ_Jlw4a2GG2K1hz1iFXw", "state"=>"448ec326aea296918c7cd47585e04e4b4a44cb4d376b9e16"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:18:in `create_with_fb'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Yinghui Gan"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:18:in `create_with_fb'
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 210ms (ActiveRecord: 11.5ms | Allocations: 7243)
+
+
+Started GET "/users/3" for ::1 at 2021-03-30 11:33:49 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 3.3ms | Allocations: 163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 135.6ms | Allocations: 6290)
+Completed 200 OK in 147ms (Views: 136.8ms | ActiveRecord: 1.5ms | Allocations: 7481)
+
+
+Started GET "/users/3/team/new" for ::1 at 2021-03-30 11:33:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/3/team/new"):
+  
+Started GET "/users/3/teams/new" for ::1 at 2021-03-30 11:34:04 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 6.2ms | Allocations: 2807)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2877)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 9.8ms | Allocations: 8558)
+
+
+  
+ActionView::Template::Error (undefined method `teams_path' for #<ActionView::Base:0x00558ae6b8d578>
+Did you mean?  asset_path):
+    1: <%= form_for(@team) do |f| %>
+    2:     <strong><%= f.label "Name your champion team!" %></strong>
+    3:     <%= f.text_field :name %>
+    4:     <%= f.submit %>
+  
+app/views/teams/new.erb:1
+Started GET "/users/3" for ::1 at 2021-03-30 11:37:45 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 148.8ms | Allocations: 6141)
+Completed 200 OK in 195ms (Views: 150.2ms | ActiveRecord: 11.0ms | Allocations: 12585)
+
+
+Started GET "/users/3" for ::1 at 2021-03-30 11:38:21 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 12.5ms | Allocations: 3544)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 3614)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 1.5ms | Allocations: 5277)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_team_path' for #<ActionView::Base:0x007fd6301dad68>
+Did you mean?  new_user_path
+               user_team_path
+               user_teams_path):
+    1: <h1>Hi, <%= @user.username %>!</h1>
+    2: <%= link_to 'Log Out', '/logout' %>
+    3: <%= link_to 'Create Team', new_team_path %>
+  
+app/views/users/show.erb:3
+Started GET "/users/3" for ::1 at 2021-03-30 11:38:39 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 4.2ms | Allocations: 1204)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 1274)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.4ms | Allocations: 2936)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"teams", :id=>"3"}, missing required keys: [:user_id]):
+    1: <h1>Hi, <%= @user.username %>!</h1>
+    2: <%= link_to 'Log Out', '/logout' %>
+    3: <%= link_to 'Create Team', user_team_path %>
+  
+app/views/users/show.erb:3
+Started GET "/users/3" for ::1 at 2021-03-30 11:38:49 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 4.9ms | Allocations: 1202)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 1272)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 1.4ms | Allocations: 2934)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"teams", :id=>"3"}, missing required keys: [:user_id]):
+    1: <h1>Hi, <%= @user.username %>!</h1>
+    2: <%= link_to 'Log Out', '/logout' %>
+    3: <%= link_to 'Create Team', new_user_team_path %>
+  
+app/views/users/show.erb:3
+Started GET "/users/3" for ::1 at 2021-03-30 11:39:09 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 3.7ms | Allocations: 207)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 135.0ms | Allocations: 6524)
+Completed 200 OK in 163ms (Views: 150.5ms | ActiveRecord: 1.8ms | Allocations: 8220)
+
+
+Started GET "/users/3/teams/new" for ::1 at 2021-03-30 11:39:12 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 9.5ms | Allocations: 2950)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 3020)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 10.1ms | Allocations: 9080)
+
+
+  
+ActionView::Template::Error (undefined method `teams_path' for #<ActionView::Base:0x007fd62c53b128>
+Did you mean?  asset_path):
+    1: <%= form_for(@team) do |f| %>
+    2:     <strong><%= f.label "Name your champion team!" %></strong>
+    3:     <%= f.text_field :name %>
+    4:     <%= f.submit %>
+  
+app/views/teams/new.erb:1
+Started GET "/users/3/teams/new" for ::1 at 2021-03-30 11:41:56 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/teams_controller.rb:11:in `new'
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 10.5ms | Allocations: 6784)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'user_id' for Team.):
+  
+app/controllers/teams_controller.rb:11:in `new'
+Started GET "/users/3/teams/new" for ::1 at 2021-03-30 11:42:46 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"3"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 642)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'user_id' for Team.):
+  
+app/controllers/teams_controller.rb:11:in `new'
+Started GET "/users/3" for ::1 at 2021-03-30 11:42:53 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 3.1ms | Allocations: 209)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 139.1ms | Allocations: 6481)
+Completed 200 OK in 190ms (Views: 152.0ms | ActiveRecord: 11.3ms | Allocations: 12543)
+
+
+Started GET "/users/3/teams/new" for ::1 at 2021-03-30 11:42:55 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"3"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 642)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'user_id' for Team.):
+  
+app/controllers/teams_controller.rb:11:in `new'
+Started GET "/users/3" for ::1 at 2021-03-30 11:44:23 -0400
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 7.4ms | Allocations: 353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1282.3ms | Allocations: 13808)
+Completed 200 OK in 1402ms (Views: 1303.4ms | ActiveRecord: 6.6ms | Allocations: 22949)
+
+
+Started GET "/users/3/teams/new" for ::1 at 2021-03-30 11:44:26 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"3"}
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 7.0ms | Allocations: 6477)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'user_id' for Team.):
+  
+app/controllers/teams_controller.rb:11:in `new'
+Started GET "/users/3" for ::1 at 2021-03-30 11:45:17 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 0.3ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 154.0ms | Allocations: 6256)
+Completed 200 OK in 205ms (Views: 155.5ms | ActiveRecord: 14.1ms | Allocations: 12711)
+
+
+Started GET "/users/3/teams/new" for ::1 at 2021-03-30 11:45:19 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"3"}
+  [1m[36mTeam Load (3.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:11:in `new'
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (34.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (23.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20210330043114)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210330043114"]]
+  [1m[36mTRANSACTION (16.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTeams (20210330151209)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "teams" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "game_play" integer DEFAULT 0, "wins" integer DEFAULT 0, "draws" integer DEFAULT 0, "losses" integer DEFAULT 0, "points" integer DEFAULT 0, "user_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210330151209"]]
+  [1m[36mTRANSACTION (14.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (5.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-03-30 15:47:01.913594"], ["updated_at", "2021-03-30 15:47:01.913594"]]
+  [1m[36mTRANSACTION (16.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-03-30 11:47:24 -0400
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/home.erb within layouts/application
+  Rendered users/home.erb within layouts/application (Duration: 9.5ms | Allocations: 359)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1220.8ms | Allocations: 13813)
+Completed 200 OK in 1294ms (Views: 1242.8ms | ActiveRecord: 0.0ms | Allocations: 16563)
+
+
+Started GET "/auth/facebook" for ::1 at 2021-03-30 11:47:28 -0400
+Started GET "/auth/facebook" for ::1 at 2021-03-30 11:47:28 -0400
+Started GET "/auth/facebook/callback?code=AQBhaCjDu5ByhCZtEuxHdsPSWivLNvgtoD4tIWBtauUVmTrq0bylGvVf3WH0qrluehez-YWQPdJoMwK4FjEjnDjCrGtHPclpMXL_yKX-J9w8V---SkwQt072ztxx3coSTxsAGcbREI8lJ0EmgYj1rumQH9nJtditm0cBwtE5X7hXqIqEHtVhdg9Q_aW_6jpK5kh6A2FEbmbYCE9sf1bsWYM3kSr893glMOcc75XPPpvTL6EOevw6iwMXTt_s0kPUR5nb4-FQuvDduqxw0pumAoPMb0kHh8f4xfyg8Z0PNzdpgK3H-0ai58xTkY4BYauQZ813w0KuwsX1iwihqy_Q3Rkt&state=e880c492e8ad5039d9b8ec8f49f02d3a470eab90d1b83640" for ::1 at 2021-03-30 11:47:28 -0400
+Processing by SessionsController#create_with_fb as HTML
+  Parameters: {"code"=>"AQBhaCjDu5ByhCZtEuxHdsPSWivLNvgtoD4tIWBtauUVmTrq0bylGvVf3WH0qrluehez-YWQPdJoMwK4FjEjnDjCrGtHPclpMXL_yKX-J9w8V---SkwQt072ztxx3coSTxsAGcbREI8lJ0EmgYj1rumQH9nJtditm0cBwtE5X7hXqIqEHtVhdg9Q_aW_6jpK5kh6A2FEbmbYCE9sf1bsWYM3kSr893glMOcc75XPPpvTL6EOevw6iwMXTt_s0kPUR5nb4-FQuvDduqxw0pumAoPMb0kHh8f4xfyg8Z0PNzdpgK3H-0ai58xTkY4BYauQZ813w0KuwsX1iwihqy_Q3Rkt", "state"=>"e880c492e8ad5039d9b8ec8f49f02d3a470eab90d1b83640"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Yinghui Gan"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:18:in `create_with_fb'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sessions_controller.rb:18:in `create_with_fb'
+  [1m[36mUser Exists? (2.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Yinghui Gan"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:18:in `create_with_fb'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "figooooo0221@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:18:in `create_with_fb'
+  [1m[36mUser Create (18.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "Yinghui Gan"], ["email", "figooooo0221@gmail.com"], ["password_digest", "$2a$12$RlTreL9hH7t6.dFy57EfYeuBXmMe1qunRO2upu8it4rr6P6JvTIj6"], ["created_at", "2021-03-30 15:47:29.504578"], ["updated_at", "2021-03-30 15:47:29.504578"]]
+  ↳ app/controllers/sessions_controller.rb:18:in `create_with_fb'
+  [1m[36mTRANSACTION (20.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sessions_controller.rb:18:in `create_with_fb'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 398ms (ActiveRecord: 58.6ms | Allocations: 11365)
+
+
+Started GET "/users/1" for ::1 at 2021-03-30 11:47:29 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 6.5ms | Allocations: 216)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 152.1ms | Allocations: 6422)
+Completed 200 OK in 169ms (Views: 153.9ms | ActiveRecord: 1.6ms | Allocations: 7623)
+
+
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 11:47:31 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+Started GET "/users/1/teams/new" for 127.0.0.1 at 2021-03-30 11:48:03 -0400
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 22.0ms | Allocations: 3453)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 3528)
+Completed 500 Internal Server Error in 136ms (ActiveRecord: 4.8ms | Allocations: 13336)
+
+
+  
+ActionView::Template::Error (undefined method `teams_path' for #<ActionView::Base:0x007fbc6152ca18>
+Did you mean?  asset_path):
+    1: <%= form_for(@team) do |f| %>
+    2:     <%= f.hidden_field :user_id %>
+    3:     <strong><%= f.label "Name your champion team!" %></strong>
+    4:     <%= f.text_field :name %>
+  
+app/views/teams/new.erb:1
+Started GET "/users/1" for ::1 at 2021-03-30 11:49:39 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 4.0ms | Allocations: 237)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1264.3ms | Allocations: 13675)
+Completed 200 OK in 1343ms (Views: 1283.1ms | ActiveRecord: 11.4ms | Allocations: 20515)
+
+
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 11:49:42 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 9.8ms | Allocations: 2956)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3027)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 3943)
+
+
+  
+ActionView::Template::Error (undefined method `teams_path' for #<ActionView::Base:0x007fbc6123d708>
+Did you mean?  asset_path):
+    1: <%= form_for @team do |f| %>
+    2:     <%= f.hidden_field :user_id %>
+    3:     <strong><%= f.label "Name your champion team!" %></strong>
+    4:     <%= f.text_field :name %>
+  
+app/views/teams/new.erb:1
+Started GET "/users/1" for ::1 at 2021-03-30 11:49:54 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 0.8ms | Allocations: 87)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 160.8ms | Allocations: 6293)
+Completed 200 OK in 166ms (Views: 162.1ms | ActiveRecord: 1.7ms | Allocations: 7257)
+
+
+Started GET "/users/1" for ::1 at 2021-03-30 11:49:54 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 0.2ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 152.1ms | Allocations: 6285)
+Completed 200 OK in 157ms (Views: 152.8ms | ActiveRecord: 1.9ms | Allocations: 7229)
+
+
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 11:53:36 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 6.3ms | Allocations: 2780)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 2850)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 3236)
+
+
+  
+ActionView::Template::Error (undefined method `teams_path' for #<ActionView::Base:0x007fbc60e3a610>
+Did you mean?  asset_path):
+    1: <%= form_for @team do |f| %>
+    2:     <%= f.hidden_field :user_id %>
+    3:     <strong><%= f.label "Name your champion team!" %></strong>
+    4:     <%= f.text_field :name %>
+  
+app/views/teams/new.erb:1
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 11:55:26 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 10.1ms | Allocations: 2950)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 3020)
+Completed 500 Internal Server Error in 41ms (Allocations: 4145)
+
+
+  
+ActionView::Template::Error (undefined method `teams_path' for #<ActionView::Base:0x00560d96941a98>
+Did you mean?  asset_path):
+    1: <%= form_for @team do |f| %>
+    2:     <strong><%= f.label "Name your champion team!" %></strong>
+    3:     <%= f.text_field :name %>
+    4:     <%= f.hidden_field :user_id %>
+  
+app/views/teams/new.erb:1
+Started GET "/" for ::1 at 2021-03-30 11:55:43 -0400
+Processing by UsersController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/home.erb within layouts/application
+  Rendered users/home.erb within layouts/application (Duration: 6.0ms | Allocations: 225)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 146.1ms | Allocations: 6616)
+Completed 200 OK in 158ms (Views: 150.1ms | Allocations: 7517)
+
+
+Started GET "/users/new" for ::1 at 2021-03-30 11:55:47 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.erb within layouts/application
+  Rendered users/new.erb within layouts/application (Duration: 94.5ms | Allocations: 7617)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 238.4ms | Allocations: 13719)
+Completed 200 OK in 247ms (Views: 239.3ms | Allocations: 14236)
+
+
+Started POST "/auth/facebook" for ::1 at 2021-03-30 11:55:48 -0400
+Started GET "/auth/facebook/callback?code=AQAvwzswYj_r0F_9VsRYwL9_FjnLowThZGyCMFwYockACMNWbKE7Iom53bCUdR5nTY5TiiVaVhxXZbpl7Qm75BCmzaSOFDXAWHoa0paIY8k8U_celrKw0u5HWS0q8JgPNNaa9YFFs7Dd-OnJKhstlsQ65uQCBvBRZ7onQ2v8ECnQORWBn5Tl7XRbz6GEAATWjDJwxOs5773ivKlkMx0xeNNBcM7IorXLVluZU-jSrUHERncahH73RTKciGuEnCYJgQgpkZ4e7hsiBDVw7gHMOIlmuyLeAPEoYcMSMUzdrcrIEiN2O1LZ_IxpJvP-HWUvLx8UHmdU23qW8VKqhNOBa8g5&state=3d6863aff483f474565bdede10ebb0b9c70dc04bf94bb707" for ::1 at 2021-03-30 11:55:48 -0400
+Processing by SessionsController#create_with_fb as HTML
+  Parameters: {"code"=>"AQAvwzswYj_r0F_9VsRYwL9_FjnLowThZGyCMFwYockACMNWbKE7Iom53bCUdR5nTY5TiiVaVhxXZbpl7Qm75BCmzaSOFDXAWHoa0paIY8k8U_celrKw0u5HWS0q8JgPNNaa9YFFs7Dd-OnJKhstlsQ65uQCBvBRZ7onQ2v8ECnQORWBn5Tl7XRbz6GEAATWjDJwxOs5773ivKlkMx0xeNNBcM7IorXLVluZU-jSrUHERncahH73RTKciGuEnCYJgQgpkZ4e7hsiBDVw7gHMOIlmuyLeAPEoYcMSMUzdrcrIEiN2O1LZ_IxpJvP-HWUvLx8UHmdU23qW8VKqhNOBa8g5", "state"=>"3d6863aff483f474565bdede10ebb0b9c70dc04bf94bb707"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:18:in `create_with_fb'
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Yinghui Gan"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:18:in `create_with_fb'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 12ms (ActiveRecord: 3.7ms | Allocations: 1537)
+
+
+Started GET "/users/1" for ::1 at 2021-03-30 11:55:49 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 3.1ms | Allocations: 207)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 138.4ms | Allocations: 6411)
+Completed 200 OK in 150ms (Views: 139.3ms | ActiveRecord: 1.3ms | Allocations: 7499)
+
+
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 11:55:50 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 7.2ms | Allocations: 2788)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2858)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 3244)
+
+
+  
+ActionView::Template::Error (undefined method `teams_path' for #<ActionView::Base:0x007fbc61157e60>
+Did you mean?  asset_path):
+    1: <%= form_for @team do |f| %>
+    2:     <strong><%= f.label "Name your champion team!" %></strong>
+    3:     <%= f.text_field :name %>
+    4:     <%= f.hidden_field :user_id %>
+  
+app/views/teams/new.erb:1
+Started PUT "/__web_console/repl_sessions/aef788e10d85c94748cac49ce3f3d88e" for ::1 at 2021-03-30 11:55:57 -0400
+Started PUT "/__web_console/repl_sessions/aef788e10d85c94748cac49ce3f3d88e" for ::1 at 2021-03-30 11:56:02 -0400
+Started PUT "/__web_console/repl_sessions/aef788e10d85c94748cac49ce3f3d88e" for ::1 at 2021-03-30 11:56:04 -0400
+Started PUT "/__web_console/repl_sessions/aef788e10d85c94748cac49ce3f3d88e" for ::1 at 2021-03-30 11:56:16 -0400
+Started GET "/users/1" for ::1 at 2021-03-30 12:05:50 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 0.4ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 160.8ms | Allocations: 6254)
+Completed 200 OK in 210ms (Views: 162.9ms | ActiveRecord: 5.2ms | Allocations: 12267)
+
+
+Started GET "/users/1" for ::1 at 2021-03-30 12:05:50 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 0.2ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 152.8ms | Allocations: 6282)
+Completed 200 OK in 157ms (Views: 153.8ms | ActiveRecord: 1.2ms | Allocations: 7226)
+
+
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 12:05:52 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:12:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 6.7ms | Allocations: 2773)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2843)
+Completed 500 Internal Server Error in 266ms (ActiveRecord: 1.9ms | Allocations: 15228)
+
+
+  
+ActionView::Template::Error (undefined method `teams_path' for #<ActionView::Base:0x007fbc61365978>
+Did you mean?  asset_path):
+    1: <%= form_for @team do |f| %>
+    2:     <strong><%= f.label "Name your champion team!" %></strong>
+    3:     <%= f.text_field :name %>
+    4:     <%= f.hidden_field :user_id %>
+  
+app/views/teams/new.erb:1
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 12:06:20 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:12:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 10.9ms | Allocations: 2892)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 2962)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 1.4ms | Allocations: 4785)
+
+
+  
+ActionView::Template::Error (undefined method `teams_path' for #<ActionView::Base:0x007fbc613fb770>
+Did you mean?  asset_path):
+    1: <%= form_for(@team) do |f| %>
+    2:     
+    3: <% end %>
+    4:   
+  
+app/views/teams/new.erb:1
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 12:06:28 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:12:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 7.6ms | Allocations: 112)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 161.5ms | Allocations: 6502)
+Completed 200 OK in 194ms (Views: 176.8ms | ActiveRecord: 2.1ms | Allocations: 8346)
+
+
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 12:06:37 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:12:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 3.3ms | Allocations: 130)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 155.7ms | Allocations: 6524)
+Completed 200 OK in 186ms (Views: 171.8ms | ActiveRecord: 2.4ms | Allocations: 8370)
+
+
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 12:06:51 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:12:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 4.4ms | Allocations: 1105)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 1175)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 1.5ms | Allocations: 2993)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    1: <%= form_for do |f| %>
+    2:         
+    3: <% end %>
+    4:   
+  
+app/views/teams/new.erb:1
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 12:06:59 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:12:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 11.1ms | Allocations: 2891)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 2961)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 2.2ms | Allocations: 4783)
+
+
+  
+ActionView::Template::Error (undefined method `teams_path' for #<ActionView::Base:0x007fbc61568108>
+Did you mean?  asset_path):
+    1: <%= form_for @team do |f| %>
+    2:         
+    3: <% end %>
+    4:   
+  
+app/views/teams/new.erb:1
+Started GET "/users/new" for ::1 at 2021-03-30 12:07:41 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.erb within layouts/application
+  Rendered users/new.erb within layouts/application (Duration: 4.4ms | Allocations: 1420)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 175.8ms | Allocations: 7808)
+Completed 200 OK in 197ms (Views: 188.6ms | ActiveRecord: 0.0ms | Allocations: 8941)
+
+
+Started POST "/auth/facebook" for ::1 at 2021-03-30 12:07:43 -0400
+Started GET "/auth/facebook/callback?code=AQAeRzryuPpiZC3r7_YDqRIIkNLrU0GJvEydjF4L0fncnhdGD9_3AZ8E9AD0GP6uo3Uwt_PdYIp2wdTqMe-58DZyNdkWaCfUfHF5H-84bX6IughVHcpq6xWoOWW8Uh7IqhpdGSaA034rIW4sSxtwAD0PhZHVCX1RyBlj3M87ebCYehQ42J0Oj3LZuJSYBZV2lHKQ6xvkh1kyeGeYB19jnjekRUDGpt3Ta0uhUKxdveho7ktss7ZWSlf7vTfdquIoV0EZvjIZl_eJ_FInVEBcKn5M4fQByB3-TTlzke6cT0QD6MIS9VcFg309-RFY-ym7aYpyNLBCPhmeEOf8VVX33uGh&state=cb4517c63fa9c19120860dc54b2e87b6369c55122abc0d19" for ::1 at 2021-03-30 12:07:44 -0400
+Processing by SessionsController#create_with_fb as HTML
+  Parameters: {"code"=>"AQAeRzryuPpiZC3r7_YDqRIIkNLrU0GJvEydjF4L0fncnhdGD9_3AZ8E9AD0GP6uo3Uwt_PdYIp2wdTqMe-58DZyNdkWaCfUfHF5H-84bX6IughVHcpq6xWoOWW8Uh7IqhpdGSaA034rIW4sSxtwAD0PhZHVCX1RyBlj3M87ebCYehQ42J0Oj3LZuJSYBZV2lHKQ6xvkh1kyeGeYB19jnjekRUDGpt3Ta0uhUKxdveho7ktss7ZWSlf7vTfdquIoV0EZvjIZl_eJ_FInVEBcKn5M4fQByB3-TTlzke6cT0QD6MIS9VcFg309-RFY-ym7aYpyNLBCPhmeEOf8VVX33uGh", "state"=>"cb4517c63fa9c19120860dc54b2e87b6369c55122abc0d19"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Yinghui Gan"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:18:in `create_with_fb'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 5ms (ActiveRecord: 1.8ms | Allocations: 826)
+
+
+Started GET "/users/1" for ::1 at 2021-03-30 12:07:44 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 5.0ms | Allocations: 206)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 138.1ms | Allocations: 6410)
+Completed 200 OK in 154ms (Views: 139.3ms | ActiveRecord: 1.3ms | Allocations: 7481)
+
+
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 12:07:46 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:12:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 12:08:46 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/teams_controller.rb:12:in `new'
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:12:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+Started GET "/users/1" for 127.0.0.1 at 2021-03-30 12:10:41 -0400
+Started GET "/users/new" for 127.0.0.1 at 2021-03-30 12:10:41 -0400
+  [1m[35m (13.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 26.4ms | Allocations: 562)
+  Rendered users/new.erb within layouts/application (Duration: 160.7ms | Allocations: 6196)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1504.6ms | Allocations: 32293)
+  Rendered layout layouts/application.html.erb (Duration: 1492.6ms | Allocations: 32126)
+Completed 200 OK in 1767ms (Views: 1558.4ms | ActiveRecord: 11.8ms | Allocations: 42535)
+
+
+Completed 200 OK in 1516ms (Views: 1495.4ms | ActiveRecord: 0.0ms | Allocations: 33040)
+
+
+Started POST "/auth/facebook" for ::1 at 2021-03-30 12:10:44 -0400
+Started GET "/auth/facebook/callback?code=AQCssAhD6tlekgl2dLHm_L8PKstuBvoHLlkM9RAsMCme35pNmW1r4NdCIBPi5E4KwGR9JWD8l6BXsEHlMgKVwOIE8qCmXXufGI7ep5c3Y4UzqJQvu_uYZybI5ChxSeagv5_yh2aTSdWX6gH0kmRvWyZJYtnjqjz2i_puLyLSMf_jOu0DKg-XbShCHNLybZ-N387lIOWNoio3PMIvGEGwqs45Q4_nIX6BHps7a2qIP0edugeDyC5mAevPRUtRRpd3xTd8FslBtY1svawDYnCZbeOisChWI5hm8vdF6Cd_jiWUaQbNjAdmM4TEGmN4Zx81BVdpM63i_mt20FymSxp3KVs4&state=614561097ee8be17c82d14b6c462ddbd6f10baeac44a34cb" for ::1 at 2021-03-30 12:10:44 -0400
+Processing by SessionsController#create_with_fb as HTML
+  Parameters: {"code"=>"AQCssAhD6tlekgl2dLHm_L8PKstuBvoHLlkM9RAsMCme35pNmW1r4NdCIBPi5E4KwGR9JWD8l6BXsEHlMgKVwOIE8qCmXXufGI7ep5c3Y4UzqJQvu_uYZybI5ChxSeagv5_yh2aTSdWX6gH0kmRvWyZJYtnjqjz2i_puLyLSMf_jOu0DKg-XbShCHNLybZ-N387lIOWNoio3PMIvGEGwqs45Q4_nIX6BHps7a2qIP0edugeDyC5mAevPRUtRRpd3xTd8FslBtY1svawDYnCZbeOisChWI5hm8vdF6Cd_jiWUaQbNjAdmM4TEGmN4Zx81BVdpM63i_mt20FymSxp3KVs4", "state"=>"614561097ee8be17c82d14b6c462ddbd6f10baeac44a34cb"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Yinghui Gan"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:18:in `create_with_fb'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 6ms (ActiveRecord: 2.2ms | Allocations: 901)
+
+
+Started GET "/users/1" for ::1 at 2021-03-30 12:10:45 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 146.6ms | Allocations: 6287)
+Completed 200 OK in 151ms (Views: 147.5ms | ActiveRecord: 1.2ms | Allocations: 7232)
+
+
+Started GET "/users/1/teams/new" for 127.0.0.1 at 2021-03-30 12:10:46 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:12:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 10.6ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 143.6ms | Allocations: 6253)
+Completed 200 OK in 311ms (Views: 148.6ms | ActiveRecord: 9.6ms | Allocations: 16976)
+
+
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 12:11:08 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:12:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 61.4ms | Allocations: 5481)
+  Rendered layout layouts/application.html.erb (Duration: 62.3ms | Allocations: 5552)
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 1.4ms | Allocations: 7400)
+
+
+  
+ActionView::Template::Error (undefined method `teams_path' for #<ActionView::Base:0x00560b3bc9a440>
+Did you mean?  asset_path):
+    1: <%= form_for @team do |f| %>
+    2:     <strong><%= f.label "Name your champion team!" %></strong>
+    3:     <%= f.text_field :name %>
+    4:     <%= f.hidden_field :user_id %>
+  
+app/views/teams/new.erb:1
+Started GET "/users/1/teams" for ::1 at 2021-03-30 12:11:26 -0400
+Processing by TeamsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.erb within layouts/application
+  Rendered teams/index.erb within layouts/application (Duration: 3.2ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 142.8ms | Allocations: 6495)
+Completed 200 OK in 155ms (Views: 143.9ms | ActiveRecord: 1.5ms | Allocations: 7571)
+
+
+Started GET "/users/1/teams" for ::1 at 2021-03-30 12:11:33 -0400
+Processing by TeamsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.erb within layouts/application
+  Rendered teams/index.erb within layouts/application (Duration: 3.5ms | Allocations: 111)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 139.1ms | Allocations: 6500)
+Completed 200 OK in 165ms (Views: 152.4ms | ActiveRecord: 1.6ms | Allocations: 8189)
+
+
+Started GET "/users/1/teams" for ::1 at 2021-03-30 12:12:04 -0400
+Processing by TeamsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.erb within layouts/application
+  Rendered teams/index.erb within layouts/application (Duration: 6.1ms | Allocations: 1477)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 1548)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 1.9ms | Allocations: 3236)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    1: <h1>Welcome <%= @user.username %></h1>
+  
+app/views/teams/index.erb:1
+Started GET "/users/1/teams" for ::1 at 2021-03-30 12:12:37 -0400
+Processing by TeamsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/teams_controller.rb:4:in `index'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:4:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.erb within layouts/application
+  Rendered teams/index.erb within layouts/application (Duration: 0.1ms | Allocations: 43)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 145.5ms | Allocations: 6368)
+Completed 200 OK in 210ms (Views: 147.2ms | ActiveRecord: 12.0ms | Allocations: 14107)
+
+
+Started GET "/users/new" for ::1 at 2021-03-30 12:12:53 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.erb within layouts/application
+  Rendered users/new.erb within layouts/application (Duration: 7.0ms | Allocations: 1423)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 149.0ms | Allocations: 7587)
+Completed 200 OK in 167ms (Views: 155.4ms | ActiveRecord: 0.0ms | Allocations: 8569)
+
+
+Started POST "/auth/facebook" for ::1 at 2021-03-30 12:12:55 -0400
+Started GET "/auth/facebook/callback?code=AQDlVCh5f97T0lw1kRMCQoe0R5-kjypn7A7NmnubBfUXq2bSrP9pNz5hNMINXJhYhMIaKnItk4rZGekvkLNE_qnxyoXkJP8gSsTbuRwPH9DFZxyPtE4omUe92uStEBJ3AgltwH5GUwyN2bKAEYTU38K1r6aQ48T_JTmUr_8w67OLZvfX6mUv2jOkGUWx7olB7FPkBYJUlOTO0n4HiTAEIf_IqVj2rPFUYWYqLoxWAYL-ajP1QvXSCQ_FgxFS2-EM2CtCqLtPGWJhSH01aHzV04zMPdsvKldslY3CP-vcYwu5jOON0ONJYa4OlTKpzScMoqc9ikZs4_4uCY49mWHachXV&state=4251df2f45a427120b50af9845b06251df4b8c1050df9577" for ::1 at 2021-03-30 12:12:55 -0400
+Processing by SessionsController#create_with_fb as HTML
+  Parameters: {"code"=>"AQDlVCh5f97T0lw1kRMCQoe0R5-kjypn7A7NmnubBfUXq2bSrP9pNz5hNMINXJhYhMIaKnItk4rZGekvkLNE_qnxyoXkJP8gSsTbuRwPH9DFZxyPtE4omUe92uStEBJ3AgltwH5GUwyN2bKAEYTU38K1r6aQ48T_JTmUr_8w67OLZvfX6mUv2jOkGUWx7olB7FPkBYJUlOTO0n4HiTAEIf_IqVj2rPFUYWYqLoxWAYL-ajP1QvXSCQ_FgxFS2-EM2CtCqLtPGWJhSH01aHzV04zMPdsvKldslY3CP-vcYwu5jOON0ONJYa4OlTKpzScMoqc9ikZs4_4uCY49mWHachXV", "state"=>"4251df2f45a427120b50af9845b06251df4b8c1050df9577"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Yinghui Gan"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:18:in `create_with_fb'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 4ms (ActiveRecord: 1.6ms | Allocations: 828)
+
+
+Started GET "/users/1" for ::1 at 2021-03-30 12:12:56 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 3.8ms | Allocations: 207)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 135.4ms | Allocations: 6412)
+Completed 200 OK in 148ms (Views: 136.3ms | ActiveRecord: 1.7ms | Allocations: 7574)
+
+
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 12:12:58 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 9.4ms | Allocations: 2945)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3015)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 10.1ms | Allocations: 9946)
+
+
+  
+ActionView::Template::Error (undefined method `teams_path' for #<ActionView::Base:0x007f0d6004a2a8>
+Did you mean?  asset_path):
+    1: <%= form_for @team do |f| %>
+    2:     <strong><%= f.label "Name your champion team!" %></strong>
+    3:     <%= f.text_field :name %>
+    4:     <%= f.hidden_field :user_id %>
+  
+app/views/teams/new.erb:1
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 12:14:40 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/teams_controller.rb:13:in `new'
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:13:in `new'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:14:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 4.0ms | Allocations: 1139)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 1209)
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 18.7ms | Allocations: 15290)
+
+
+  
+ActionView::Template::Error (can't write unknown attribute `html`):
+    1: <%= form_for(@user, @team) do |f| %>
+    2:     <strong><%= f.label "Name your champion team!" %></strong>
+    3:     <%= f.text_field :name %>
+    4:     <%= f.hidden_field :user_id %>
+  
+app/views/teams/new.erb:1
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 12:16:25 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/teams_controller.rb:13:in `new'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 0.6ms | Allocations: 961)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1031)
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 22.9ms | Allocations: 14003)
+
+
+  
+ActionView::Template::Error (can't write unknown attribute `html`):
+    1: <%= form_for(@user, @team) do |f| %>
+    2:     <strong><%= f.label "Name your champion team!" %></strong>
+    3:     <%= f.text_field :name %>
+    4:     <%= f.hidden_field :user_id %>
+  
+app/views/teams/new.erb:1
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 12:16:45 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 4.8ms | Allocations: 1199)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 1269)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 1.2ms | Allocations: 3093)
+
+
+  
+ActionView::Template::Error (can't write unknown attribute `html`):
+    1: <%= form_for @user, @team do |f| %>
+    2:     <strong><%= f.label "Name your champion team!" %></strong>
+    3:     <%= f.text_field :name %>
+    4:     <%= f.hidden_field :user_id %>
+  
+app/views/teams/new.erb:1
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 12:17:22 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 7.6ms | Allocations: 3279)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 3349)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 2.0ms | Allocations: 5173)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<User:0x00007f0d65467020>):
+    1: <%= form_for @user do |f| %>
+    2:     <strong><%= f.label "Name your champion team!" %></strong>
+    3:     <%= f.text_field :name %>
+    4:     <%= f.hidden_field :user_id %>
+    5:     <%= f.submit %>
+    6: <% end %>
+  
+app/views/teams/new.erb:3
+app/views/teams/new.erb:1
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 12:17:39 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 3.8ms | Allocations: 1192)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 1263)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 2.5ms | Allocations: 3088)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_for @user @team do |f| %>
+    <strong><%= f.label "Name your champion team!" %></strong>
+    <%= f.text_field :name %>
+    <%= f.hidden_field :user_id %>
+    <%= f.submit %>
+<% end %>
+  
+):
+1:    <%= form_for @user @team do |f| %>
+2:        <strong><%= f.label "Name your champion team!" %></strong>
+3:        <%= f.text_field :name %>
+4:        <%= f.hidden_field :user_id %>
+5:        <%= f.submit %>
+6:    <% end %>
+7:      
+  
+app/views/teams/new.erb:1: syntax error, unexpected tIVAR, expecting end
+app/views/teams/new.erb:9: syntax error, unexpected end, expecting end-of-input
+app/views/teams/new.erb:1: syntax error, unexpected tIVAR, expecting end
+app/views/teams/new.erb:9: syntax error, unexpected end, expecting end-of-input
+app/views/teams/new.erb:1: syntax error, unexpected tIVAR, expecting end
+app/views/teams/new.erb:9: syntax error, unexpected end, expecting end-of-input
+app/views/teams/new.erb:1: syntax error, unexpected tIVAR, expecting end
+app/views/teams/new.erb:9: syntax error, unexpected end, expecting end-of-input
+app/views/teams/new.erb:1: syntax error, unexpected tIVAR, expecting end
+app/views/teams/new.erb:9: syntax error, unexpected end, expecting end-of-input
+app/views/teams/new.erb:1: syntax error, unexpected tIVAR, expecting end
+app/views/teams/new.erb:9: syntax error, unexpected end, expecting end-of-input
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 12:17:53 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 5.0ms | Allocations: 1199)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 1269)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 1.2ms | Allocations: 3093)
+
+
+  
+ActionView::Template::Error (can't write unknown attribute `html`):
+    1: <%= form_for @user, @team do |f| %>
+    2:     <strong><%= f.label "Name your champion team!" %></strong>
+    3:     <%= f.text_field :name %>
+    4:     <%= f.hidden_field :user_id %>
+  
+app/views/teams/new.erb:1
+Started GET "/users/1/teams/new" for ::1 at 2021-03-30 12:18:45 -0400
+Processing by TeamsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.erb within layouts/application
+  Rendered teams/new.erb within layouts/application (Duration: 104.0ms | Allocations: 3722)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 254.8ms | Allocations: 10010)
+Completed 200 OK in 283ms (Views: 269.6ms | ActiveRecord: 1.7ms | Allocations: 11855)
+
+
