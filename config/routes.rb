@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :users do
     resources :trips
   end
+  resources :flights
+  
   get '/signin', to: 'sessions#new'
   post '/signin', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'

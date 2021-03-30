@@ -3055,3 +3055,213 @@ Migrating to CreateFlights (20210330192744)
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[35m (3.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/" for ::1 at 2021-03-30 15:36:44 -0400
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/home.erb within layouts/application
+  Rendered users/home.erb within layouts/application (Duration: 6.9ms | Allocations: 322)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5187.8ms | Allocations: 83542)
+Completed 200 OK in 5257ms (Views: 5209.0ms | ActiveRecord: 0.0ms | Allocations: 86520)
+
+
+Started GET "/signin" for ::1 at 2021-03-30 15:36:52 -0400
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.erb within layouts/application
+  Rendered sessions/new.erb within layouts/application (Duration: 38.5ms | Allocations: 568)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 182.2ms | Allocations: 6875)
+Completed 200 OK in 199ms (Views: 189.0ms | ActiveRecord: 0.0ms | Allocations: 8015)
+
+
+Started POST "/signin" for ::1 at 2021-03-30 15:36:57 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"test", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.erb within layouts/application
+  Rendered sessions/new.erb within layouts/application (Duration: 0.5ms | Allocations: 284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 140.0ms | Allocations: 6635)
+Completed 200 OK in 193ms (Views: 141.3ms | ActiveRecord: 6.1ms | Allocations: 11028)
+
+
+Started POST "/auth/facebook" for ::1 at 2021-03-30 15:36:59 -0400
+Started GET "/auth/facebook/callback?code=AQB1CrA_3Jq-dAzYT3HaHbUDZPKzq7Lsr-vSiIurFRw-3izGnsnL5rdtt4ye_L0SJ2QHXKDuEf1JYIvfH-wNQ2dIvV7wmSNSTIHrcAyBeaqV0ch3Gt6o52Pcy43QZYHywJpNvJU4XIdeyfgg9_nXH4oBVUGN50JC8BVr28RDy0xfhFZmMSb2d0D_6J5SsnB6fGfzOyuMUzflt0_ABviAHfZna4FIq40nvi3bvXRaiHTr3E_E9X-o1sBQ6JBI9MR_pVrK8p2uOZQ6HTZ3LvqpOhVuE_IVKzL5tP7tDkuRKo6Z9BOgIWCNN98dRPefcvKKHHmvAwfM10sno90gBSrZCpgJ&state=fe27517aa42320967a214fb436060c3cda68b111091d557a" for ::1 at 2021-03-30 15:36:59 -0400
+Processing by SessionsController#create_with_fb as HTML
+  Parameters: {"code"=>"AQB1CrA_3Jq-dAzYT3HaHbUDZPKzq7Lsr-vSiIurFRw-3izGnsnL5rdtt4ye_L0SJ2QHXKDuEf1JYIvfH-wNQ2dIvV7wmSNSTIHrcAyBeaqV0ch3Gt6o52Pcy43QZYHywJpNvJU4XIdeyfgg9_nXH4oBVUGN50JC8BVr28RDy0xfhFZmMSb2d0D_6J5SsnB6fGfzOyuMUzflt0_ABviAHfZna4FIq40nvi3bvXRaiHTr3E_E9X-o1sBQ6JBI9MR_pVrK8p2uOZQ6HTZ3LvqpOhVuE_IVKzL5tP7tDkuRKo6Z9BOgIWCNN98dRPefcvKKHHmvAwfM10sno90gBSrZCpgJ", "state"=>"fe27517aa42320967a214fb436060c3cda68b111091d557a"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Yinghui Gan"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:18:in `create_with_fb'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 18ms (ActiveRecord: 8.6ms | Allocations: 3812)
+
+
+Started GET "/users/1" for ::1 at 2021-03-30 15:36:59 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 5.3ms | Allocations: 180)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 176.7ms | Allocations: 6528)
+Completed 200 OK in 194ms (Views: 177.9ms | ActiveRecord: 1.9ms | Allocations: 7787)
+
+
+Started GET "/users/1/trips/new" for ::1 at 2021-03-30 15:37:10 -0400
+Processing by TripsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/new.erb within layouts/application
+  Rendered trips/new.erb within layouts/application (Duration: 61.1ms | Allocations: 4868)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 236.3ms | Allocations: 11115)
+Completed 200 OK in 365ms (Views: 241.0ms | ActiveRecord: 8.1ms | Allocations: 19344)
+
+
+Started GET "/users/1" for ::1 at 2021-03-30 15:37:13 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 0.4ms | Allocations: 51)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 187.2ms | Allocations: 6398)
+Completed 200 OK in 194ms (Views: 188.7ms | ActiveRecord: 1.7ms | Allocations: 7427)
+
+
+Started GET "/users/1/trips/new" for ::1 at 2021-03-30 15:37:16 -0400
+Processing by TripsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/new.erb within layouts/application
+  Rendered trips/new.erb within layouts/application (Duration: 1.8ms | Allocations: 495)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 193.1ms | Allocations: 6838)
+Completed 200 OK in 198ms (Views: 194.1ms | ActiveRecord: 1.3ms | Allocations: 8023)
+
+
+Started GET "/users/1" for ::1 at 2021-03-30 15:37:22 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.erb within layouts/application
+  Rendered users/show.erb within layouts/application (Duration: 0.2ms | Allocations: 46)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 161.9ms | Allocations: 6390)
+Completed 200 OK in 168ms (Views: 163.4ms | ActiveRecord: 2.0ms | Allocations: 7422)
+
+
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFlight Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM "flights" WHERE "flights"."flight_number" = ? LIMIT ?[0m  [["flight_number", "CX897"], ["LIMIT", 1]]
+  [1m[36mFlight Create (4.2ms)[0m  [1m[32mINSERT INTO "flights" ("flight_number", "departure_time", "arrival_time", "flight_duration", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["flight_number", "CX897"], ["departure_time", "May 11"], ["arrival_time", "May 12"], ["flight_duration", "12hrs"], ["price", 500], ["created_at", "2021-03-30 19:44:49.670687"], ["updated_at", "2021-03-30 19:44:49.670687"]]
+  [1m[36mTRANSACTION (14.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFlight Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "flights" WHERE "flights"."flight_number" = ? LIMIT ?[0m  [["flight_number", "CX887"], ["LIMIT", 1]]
+  [1m[36mFlight Create (4.8ms)[0m  [1m[32mINSERT INTO "flights" ("flight_number", "departure_time", "arrival_time", "flight_duration", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["flight_number", "CX887"], ["departure_time", "May 10"], ["arrival_time", "May 11"], ["flight_duration", "12hrs"], ["price", 500], ["created_at", "2021-03-30 19:44:49.695696"], ["updated_at", "2021-03-30 19:44:49.695696"]]
+  [1m[36mTRANSACTION (13.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFlight Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "flights" WHERE "flights"."flight_number" = ? LIMIT ?[0m  [["flight_number", "CX877"], ["LIMIT", 1]]
+  [1m[36mFlight Create (3.8ms)[0m  [1m[32mINSERT INTO "flights" ("flight_number", "departure_time", "arrival_time", "flight_duration", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["flight_number", "CX877"], ["departure_time", "May 9"], ["arrival_time", "May 10"], ["flight_duration", "12hrs"], ["price", 500], ["created_at", "2021-03-30 19:44:49.720145"], ["updated_at", "2021-03-30 19:44:49.720145"]]
+  [1m[36mTRANSACTION (14.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFlight Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "flights" WHERE "flights"."flight_number" = ? LIMIT ?[0m  [["flight_number", "CX867"], ["LIMIT", 1]]
+  [1m[36mFlight Create (4.0ms)[0m  [1m[32mINSERT INTO "flights" ("flight_number", "departure_time", "arrival_time", "flight_duration", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["flight_number", "CX867"], ["departure_time", "May 18"], ["arrival_time", "May 9"], ["flight_duration", "12hrs"], ["price", 500], ["created_at", "2021-03-30 19:44:49.745327"], ["updated_at", "2021-03-30 19:44:49.745327"]]
+  [1m[36mTRANSACTION (17.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/flights" for ::1 at 2021-03-30 15:45:10 -0400
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.erb within layouts/application
+  [1m[36mFlight Load (2.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.erb:2
+  Rendered flights/index.erb within layouts/application (Duration: 24.9ms | Allocations: 5606)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1308.0ms | Allocations: 19865)
+Completed 200 OK in 1414ms (Views: 1320.7ms | ActiveRecord: 10.8ms | Allocations: 25018)
+
+
+  [1m[35m (6.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (17.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (17.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20210330043114)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210330043114"]]
+  [1m[36mTRANSACTION (16.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTrips (20210330151209)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "trips" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "flight_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210330151209"]]
+  [1m[36mTRANSACTION (15.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateFlights (20210330192744)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "flights" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "flight_number" varchar, "from" varchar, "to" varchar, "departure_time" varchar, "arrival_time" varchar, "flight_duration" varchar, "price" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210330192744"]]
+  [1m[36mTRANSACTION (16.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (5.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-03-30 19:47:23.686066"], ["updated_at", "2021-03-30 19:47:23.686066"]]
+  [1m[36mTRANSACTION (15.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFlight Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "flights" WHERE "flights"."flight_number" = ? LIMIT ?[0m  [["flight_number", "CX897"], ["LIMIT", 1]]
+  [1m[36mFlight Create (4.1ms)[0m  [1m[32mINSERT INTO "flights" ("flight_number", "from", "to", "departure_time", "arrival_time", "flight_duration", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["flight_number", "CX897"], ["from", "JFK"], ["to", "PVG"], ["departure_time", "May 11"], ["arrival_time", "May 12"], ["flight_duration", "12hrs"], ["price", 500], ["created_at", "2021-03-30 19:48:26.204638"], ["updated_at", "2021-03-30 19:48:26.204638"]]
+  [1m[36mTRANSACTION (14.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFlight Exists? (2.7ms)[0m  [1m[34mSELECT 1 AS one FROM "flights" WHERE "flights"."flight_number" = ? LIMIT ?[0m  [["flight_number", "CX887"], ["LIMIT", 1]]
+  [1m[36mFlight Create (3.9ms)[0m  [1m[32mINSERT INTO "flights" ("flight_number", "from", "to", "departure_time", "arrival_time", "flight_duration", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["flight_number", "CX887"], ["from", "JFK"], ["to", "PVG"], ["departure_time", "May 10"], ["arrival_time", "May 11"], ["flight_duration", "12hrs"], ["price", 500], ["created_at", "2021-03-30 19:48:26.230511"], ["updated_at", "2021-03-30 19:48:26.230511"]]
+  [1m[36mTRANSACTION (15.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFlight Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM "flights" WHERE "flights"."flight_number" = ? LIMIT ?[0m  [["flight_number", "CX877"], ["LIMIT", 1]]
+  [1m[36mFlight Create (5.3ms)[0m  [1m[32mINSERT INTO "flights" ("flight_number", "from", "to", "departure_time", "arrival_time", "flight_duration", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["flight_number", "CX877"], ["from", "JFK"], ["to", "PVG"], ["departure_time", "May 9"], ["arrival_time", "May 10"], ["flight_duration", "12hrs"], ["price", 500], ["created_at", "2021-03-30 19:48:26.256184"], ["updated_at", "2021-03-30 19:48:26.256184"]]
+  [1m[36mTRANSACTION (14.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFlight Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM "flights" WHERE "flights"."flight_number" = ? LIMIT ?[0m  [["flight_number", "CX867"], ["LIMIT", 1]]
+  [1m[36mFlight Create (4.3ms)[0m  [1m[32mINSERT INTO "flights" ("flight_number", "from", "to", "departure_time", "arrival_time", "flight_duration", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["flight_number", "CX867"], ["from", "JFK"], ["to", "PVG"], ["departure_time", "May 18"], ["arrival_time", "May 9"], ["flight_duration", "12hrs"], ["price", 500], ["created_at", "2021-03-30 19:48:26.281874"], ["updated_at", "2021-03-30 19:48:26.281874"]]
+  [1m[36mTRANSACTION (15.0ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/flights" for ::1 at 2021-03-30 15:49:19 -0400
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.erb within layouts/application
+  [1m[36mFlight Load (1.7ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.erb:2
+  Rendered flights/index.erb within layouts/application (Duration: 23.6ms | Allocations: 6764)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1281.5ms | Allocations: 21020)
+Completed 200 OK in 1381ms (Views: 1295.0ms | ActiveRecord: 8.8ms | Allocations: 26185)
+
+
