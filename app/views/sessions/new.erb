@@ -1,8 +1,13 @@
+
+<% if @errors %>
+    <li><%= @errors %></li>
+<% end %>
+
 <%= form_tag '/signin', method: :post do %>
     <%= label_tag :username %>
     <%= text_field_tag :username %><br>
     <%= label_tag :password %>
     <%= password_field_tag :password %><br>
     <%= submit_tag "Sign In" %>
-    <%= button_to "Sign In With Facebook" %>
+    <%= button_to "Sign In With Facebook", '/auth/facebook'%>
 <% end %>

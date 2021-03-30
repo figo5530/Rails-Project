@@ -14,6 +14,10 @@ class SessionsController < ApplicationController
         end
     end
 
+    def create_with_fb
+        binding.pry
+    end
+
     def destroy
         session.clear
         redirect_to '/'
