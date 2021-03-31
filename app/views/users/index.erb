@@ -1,19 +1,1 @@
 
-<% @trips.each do |trip| %>
-<h2>Trip Detail</h2>
-<h5>Flight Detail</h5>
-<%= trip.flight.flight_number %><br>
-<%= trip.flight.from %><br>
-<%= trip.flight.to %><br>
-<%= trip.flight.departure_time %><br>
-<%= trip.flight.arrival_time %><br>
-<%= trip.flight.flight_duration %><br>
-<h5>Traveler Detail</h5>
-<%= trip.traveler_first_name %><br>
-<%= trip.traveler_last_name %><br>
-<%= trip.traveler_gender %><br>
-<%= trip.traveler_contact_info %><br>
-
-<%= link_to 'Edit Info' %>
-<%= link_to 'Cancel Trip' %>
-<% end %>
