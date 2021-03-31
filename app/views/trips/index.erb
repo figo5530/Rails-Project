@@ -1,11 +1,26 @@
+
 <section>
     <div class="row">
-    <div class="vertical-center">
-<h1>Welcome <%= @user.username %></h1>
+    <div class="center">
+<h2>Search for Trip</h2>
+<div class="search-form">
+<%= form_tag user_trips_path(@user), method: :get do %>
+    <%= text_field_tag :traveler_first_name, "Search by Traveler first name" %>
+</div>
+    <div class="show-btn">
+    <%= submit_tag "Search" %>
+    </div>
+ <% end %>  
+    </div>
+    </div>
+</section>
 
-<% if @user.trips %>
+<section>
+    <div class="row">
+    <div class="center">
+<% if @trips %>
     
-    <% @user.trips.each do |t| %>
+    <% @trips.each do |t| %>
         <ul>
             <%= link_to 'Trip Detail', user_trip_path(@user, t) %>
             <%= link_to 'Edit Trip', edit_user_trip_path(@user, t)%>
@@ -20,3 +35,4 @@
     </div>
     </div>
 </section>
+

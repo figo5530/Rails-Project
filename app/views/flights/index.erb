@@ -1,3 +1,18 @@
+<section>
+    <div class="row">
+    <div class="center">
+<h2>Search for Flight</h2>
+<div class="search-form">
+<%= form_tag flights_path, method: :get do %>
+    <%= text_field_tag :flight_number, "Search by flight number" %>
+</div>
+    <div class="show-btn">
+    <%= submit_tag "Search" %>
+    </div>
+ <% end %>  
+    </div>
+    </div>
+</section>
 
 <section class="section-flights">
     <div class="row">

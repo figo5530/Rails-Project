@@ -1,6 +1,9 @@
 class TripsController < ApplicationController
     def index
-        if params[:user_id]
+        if params[:traveler_first_name]
+            @trips = Trip.trip_search(params[:traveler_first_name])
+            @user = User.find(params[:user_id])
+        elsif params[:user_id]
             @user = User.find(params[:user_id])
             @trips = User.find(params[:user_id]).trips
         else

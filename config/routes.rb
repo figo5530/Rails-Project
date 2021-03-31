@@ -16,7 +16,6 @@ Rails.application.routes.draw do
   get '/auth/facebook/callback', to: 'sessions#create_with_fb'
 end
 
-#scope method for flight and trip
-#errors display
+
 
 
