@@ -1,7 +1,7 @@
 <section>
     <div class="row">
     <div class="vertical-center">
-    <%= form_for @trip, url: user_trips_path(@user), method: :patch do |f| %>
+    <%= form_for([@user, @trip]) do |f| %>
         <%= f.hidden_field :user_id %> 
         <%= render partial: 'form', locals: {f: f}%>
         <%= f.label "Change Flight:" %>

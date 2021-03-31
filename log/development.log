@@ -15484,3 +15484,1302 @@ Started PATCH "/users/1/trips" for ::1 at 2021-03-31 13:22:47 -0400
   
 ActionController::RoutingError (No route matches [PATCH] "/users/1/trips"):
   
+Started PATCH "/users/1/trips" for ::1 at 2021-03-31 13:26:20 -0400
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [PATCH] "/users/1/trips"):
+  
+Started PATCH "/users/1/trips" for ::1 at 2021-03-31 13:26:47 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/users/1/trips"):
+  
+Started PATCH "/users/1/trips" for ::1 at 2021-03-31 13:26:51 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/users/1/trips"):
+  
+Started PATCH "/users/1/trips" for ::1 at 2021-03-31 13:26:54 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/users/1/trips"):
+  
+Started PATCH "/users/1/trips" for ::1 at 2021-03-31 13:27:14 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/users/1/trips"):
+  
+Started PATCH "/users/1/trips" for ::1 at 2021-03-31 13:28:26 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/users/1/trips"):
+  
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:30:15 -0400
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  [1m[36mTrip Load (2.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+Started GET "/users/1/trips" for ::1 at 2021-03-31 13:30:16 -0400
+  Rendered trips/_form.erb (Duration: 60.0ms | Allocations: 5296)
+  [1m[36mFlight Load (1.6ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 120.4ms | Allocations: 14619)
+Processing by TripsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/trips_controller.rb:4:in `index'
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:4:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:5:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/index.erb within layouts/application
+  [1m[36mTrip Load (1.7ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/trips/index.erb:8
+  Rendered trips/index.erb within layouts/application (Duration: 10.0ms | Allocations: 1764)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 691.7ms | Allocations: 46350)
+  Rendered layout layouts/application.html.erb (Duration: 468.3ms | Allocations: 27260)
+Completed 200 OK in 930ms (Views: 714.7ms | ActiveRecord: 31.3ms | Allocations: 65801)
+
+
+Completed 200 OK in 490ms (Views: 467.8ms | ActiveRecord: 6.9ms | Allocations: 29872)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:30:18 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  [1m[36mTrip Load (1.7ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 1.4ms | Allocations: 969)
+  [1m[36mFlight Load (3.9ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 11.2ms | Allocations: 2265)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 238.0ms | Allocations: 7593)
+Completed 200 OK in 246ms (Views: 233.6ms | ActiveRecord: 8.6ms | Allocations: 9295)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:30:21 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  [1m[36mTrip Load (1.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 1.0ms | Allocations: 969)
+  [1m[36mFlight Load (1.7ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 5.4ms | Allocations: 2240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 180.5ms | Allocations: 7570)
+Completed 200 OK in 188ms (Views: 178.4ms | ActiveRecord: 6.0ms | Allocations: 9268)
+
+
+Started PATCH "/users/1/trips/1" for ::1 at 2021-03-31 13:30:31 -0400
+Processing by TripsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "trip"=>{"user_id"=>"1", "traveler_first_name"=>"f", "traveler_last_name"=>"g", "traveler_gender"=>"m", "traveler_contact_info"=>"1", "flight_id"=>"1"}, "commit"=>"Update Trip", "user_id"=>"1", "id"=>"1"}
+Started GET "/users/1/trips" for ::1 at 2021-03-31 13:30:49 -0400
+Processing by TripsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:4:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:5:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/index.erb within layouts/application
+  [1m[36mTrip Load (3.0ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/trips/index.erb:8
+  Rendered trips/index.erb within layouts/application (Duration: 6.9ms | Allocations: 1276)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 248.5ms | Allocations: 6607)
+Completed 200 OK in 255ms (Views: 246.5ms | ActiveRecord: 6.2ms | Allocations: 8019)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:30:51 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  [1m[36mTrip Load (1.7ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 3.1ms | Allocations: 969)
+  [1m[36mFlight Load (3.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 13.1ms | Allocations: 2240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 214.1ms | Allocations: 7569)
+Completed 200 OK in 223ms (Views: 210.1ms | ActiveRecord: 8.8ms | Allocations: 9246)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:31:04 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  [1m[36mTrip Load (1.5ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 2.2ms | Allocations: 969)
+  [1m[36mFlight Load (3.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 12.4ms | Allocations: 2240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 195.3ms | Allocations: 7572)
+Completed 200 OK in 204ms (Views: 191.6ms | ActiveRecord: 7.7ms | Allocations: 9247)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:31:08 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  [1m[36mTrip Load (1.8ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/edit.erb within layouts/application (Duration: 50.1ms | Allocations: 3664)
+  Rendered layout layouts/application.html.erb (Duration: 50.7ms | Allocations: 3735)
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 3.1ms | Allocations: 6153)
+
+
+  
+ActionView::Template::Error (can't write unknown attribute `html`):
+    1: <section>
+    2:     <div class="row">
+    3:     <div class="vertical-center">
+    4:     <%= form_for @user, @trip do |f| %>
+    5:         <%= f.hidden_field :user_id %> 
+    6:         <%= render partial: 'form', locals: {f: f}%>
+    7:         <%= f.label "Change Flight:" %>
+  
+app/views/trips/edit.erb:4
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:31:19 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  [1m[36mTrip Load (1.2ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/edit.erb within layouts/application (Duration: 0.4ms | Allocations: 983)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1053)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 2.4ms | Allocations: 2706)
+
+
+  
+ActionView::Template::Error (can't write unknown attribute `html`):
+    1: <section>
+    2:     <div class="row">
+    3:     <div class="vertical-center">
+    4:     <%= form_for(@user, @trip) do |f| %>
+    5:         <%= f.hidden_field :user_id %> 
+    6:         <%= render partial: 'form', locals: {f: f}%>
+    7:         <%= f.label "Change Flight:" %>
+  
+app/views/trips/edit.erb:4
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:31:20 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  [1m[36mTrip Load (1.5ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/edit.erb within layouts/application (Duration: 0.4ms | Allocations: 983)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1053)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 2.8ms | Allocations: 2705)
+
+
+  
+ActionView::Template::Error (can't write unknown attribute `html`):
+    1: <section>
+    2:     <div class="row">
+    3:     <div class="vertical-center">
+    4:     <%= form_for(@user, @trip) do |f| %>
+    5:         <%= f.hidden_field :user_id %> 
+    6:         <%= render partial: 'form', locals: {f: f}%>
+    7:         <%= f.label "Change Flight:" %>
+  
+app/views/trips/edit.erb:4
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:31:28 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  [1m[36mTrip Load (1.5ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/edit.erb within layouts/application (Duration: 0.4ms | Allocations: 983)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1054)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 2.8ms | Allocations: 2706)
+
+
+  
+ActionView::Template::Error (can't write unknown attribute `html`):
+    1: <section>
+    2:     <div class="row">
+    3:     <div class="vertical-center">
+    4:     <%= form_for([@user, @trip]) do |f| %>
+    5:         <%= f.hidden_field :user_id %> 
+    6:         <%= render partial: 'form', locals: {f: f}%>
+    7:         <%= f.label "Change Flight:" %>
+  
+app/views/trips/edit.erb:4
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:31:29 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  [1m[36mTrip Load (1.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/edit.erb within layouts/application (Duration: 0.7ms | Allocations: 983)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1053)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 2.7ms | Allocations: 2705)
+
+
+  
+ActionView::Template::Error (can't write unknown attribute `html`):
+    1: <section>
+    2:     <div class="row">
+    3:     <div class="vertical-center">
+    4:     <%= form_for([@user, @trip]) do |f| %>
+    5:         <%= f.hidden_field :user_id %> 
+    6:         <%= render partial: 'form', locals: {f: f}%>
+    7:         <%= f.label "Change Flight:" %>
+  
+app/views/trips/edit.erb:4
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:31:30 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  [1m[36mTrip Load (1.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 4.8ms | Allocations: 1214)
+  [1m[36mFlight Load (2.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 25.3ms | Allocations: 3119)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 207.5ms | Allocations: 8878)
+Completed 200 OK in 235ms (Views: 216.9ms | ActiveRecord: 6.2ms | Allocations: 11292)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:31:35 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  [1m[36mTrip Load (1.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 1.1ms | Allocations: 969)
+  [1m[36mFlight Load (1.6ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 5.8ms | Allocations: 2228)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 169.3ms | Allocations: 7556)
+Completed 200 OK in 176ms (Views: 167.3ms | ActiveRecord: 5.5ms | Allocations: 9235)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:31:41 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  [1m[36mTrip Load (1.1ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 1.1ms | Allocations: 969)
+  [1m[36mFlight Load (1.7ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 5.7ms | Allocations: 2225)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 175.1ms | Allocations: 7553)
+Completed 200 OK in 182ms (Views: 173.1ms | ActiveRecord: 5.6ms | Allocations: 9220)
+
+
+Started PATCH "/users/1/trips/1" for ::1 at 2021-03-31 13:31:43 -0400
+Processing by TripsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "trip"=>{"user_id"=>"1", "traveler_first_name"=>"f", "traveler_last_name"=>"g", "traveler_gender"=>"m", "traveler_contact_info"=>"1", "flight_id"=>"1"}, "commit"=>"Update Trip", "user_id"=>"1", "id"=>"1"}
+  [1m[36mTrip Load (3.0ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ (pry):3:in `update'
+  [1m[36mTrip Load (2.2ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ (pry):4:in `update'
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+No template found for TripsController#update, rendering head :no_content
+Completed 204 No Content in 271819ms (ActiveRecord: 7.5ms | Allocations: 26235)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:36:20 -0400
+Completed 500 Internal Server Error in 439471ms (ActiveRecord: 0.0ms | Allocations: 1096701)
+
+
+  
+Errno::EIO (Input/output error @ io_writev - <STDOUT>):
+  
+app/controllers/trips_controller.rb:45:in `update'
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  [1m[36mTrip Load (1.6ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 1.8ms | Allocations: 977)
+  [1m[36mFlight Load (1.9ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 29.5ms | Allocations: 10520)
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:37:51 -0400
+Started GET "/users/1/trips" for ::1 at 2021-03-31 13:37:51 -0400
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 213.5ms | Allocations: 20864)
+Completed 200 OK in 296ms (Views: 206.8ms | ActiveRecord: 31.3ms | Allocations: 37772)
+
+
+Processing by TripsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/trips_controller.rb:4:in `index'
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  ↳ app/controllers/trips_controller.rb:4:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  ↳ app/controllers/trips_controller.rb:5:in `index'
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  [1m[36mTrip Load (1.6ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 2.0ms | Allocations: 977)
+  Rendering layout layouts/application.html.erb
+  [1m[36mFlight Load (3.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  Rendering trips/index.erb within layouts/application
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 50.7ms | Allocations: 11555)
+  [1m[36mTrip Load (2.2ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/trips/index.erb:8
+  Rendered trips/index.erb within layouts/application (Duration: 35.2ms | Allocations: 8950)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layout layouts/application.html.erb (Duration: 244.6ms | Allocations: 30232)
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Completed 200 OK in 292ms (Views: 233.8ms | ActiveRecord: 26.3ms | Allocations: 46806)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 227.2ms | Allocations: 28554)
+Completed 200 OK in 336ms (Views: 242.7ms | ActiveRecord: 16.0ms | Allocations: 55795)
+
+
+Started GET "/flights/2" for ::1 at 2021-03-31 13:38:28 -0400
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FlightsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFlight Load (1.9ms)[0m  [1m[34mSELECT "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:13:in `set_flight'
+  Rendering layout layouts/application.html.erb
+  Rendering flights/show.erb within layouts/application
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered flights/show.erb within layouts/application (Duration: 34.3ms | Allocations: 5995)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 1423.5ms | Allocations: 20055)
+Completed 200 OK in 1581ms (Views: 1439.7ms | ActiveRecord: 18.2ms | Allocations: 31897)
+
+
+Started GET "/users/1/trips" for ::1 at 2021-03-31 13:38:33 -0400
+Processing by TripsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:4:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:5:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/index.erb within layouts/application
+  [1m[36mTrip Load (1.6ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/trips/index.erb:8
+  Rendered trips/index.erb within layouts/application (Duration: 51.8ms | Allocations: 8054)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 217.3ms | Allocations: 13295)
+Completed 200 OK in 289ms (Views: 213.2ms | ActiveRecord: 12.8ms | Allocations: 17835)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:38:35 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  [1m[36mTrip Load (3.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 56.2ms | Allocations: 5155)
+  [1m[36mFlight Load (3.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 103.3ms | Allocations: 7520)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 308.5ms | Allocations: 12758)
+Completed 200 OK in 332ms (Views: 305.3ms | ActiveRecord: 9.7ms | Allocations: 14619)
+
+
+Started PATCH "/users/1/trips/1" for ::1 at 2021-03-31 13:38:44 -0400
+Processing by TripsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "trip"=>{"user_id"=>"1", "traveler_first_name"=>"test name", "traveler_last_name"=>"g", "traveler_gender"=>"m", "traveler_contact_info"=>"1", "flight_id"=>"1"}, "commit"=>"Update Trip", "user_id"=>"1", "id"=>"1"}
+  [1m[36mTrip Load (2.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:45:in `update'
+[31mUnpermitted parameter: :flight_id[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trips_controller.rb:46:in `update'
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:46:in `update'
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:46:in `update'
+  [1m[36mTrip Update (5.6ms)[0m  [1m[33mUPDATE "trips" SET "traveler_first_name" = ?, "updated_at" = ? WHERE "trips"."id" = ?[0m  [["traveler_first_name", "test name"], ["updated_at", "2021-03-31 17:38:44.488526"], ["id", 1]]
+  ↳ app/controllers/trips_controller.rb:46:in `update'
+  [1m[36mTRANSACTION (20.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trips_controller.rb:46:in `update'
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Redirected to http://localhost:3000/users/1/trips/1
+Completed 302 Found in 67ms (ActiveRecord: 33.9ms | Allocations: 6188)
+
+
+Started GET "/users/1/trips/1" for ::1 at 2021-03-31 13:38:44 -0400
+Processing by TripsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mTrip Load (1.5ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:23:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/show.erb within layouts/application
+  [1m[36mFlight Load (1.6ms)[0m  [1m[34mSELECT "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/show.erb:6
+  Rendered trips/show.erb within layouts/application (Duration: 9.6ms | Allocations: 1770)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 176.5ms | Allocations: 7110)
+Completed 200 OK in 190ms (Views: 174.7ms | ActiveRecord: 4.7ms | Allocations: 8237)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:38:59 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  [1m[36mTrip Load (2.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 1.2ms | Allocations: 969)
+  [1m[36mFlight Load (2.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 6.7ms | Allocations: 2228)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 184.9ms | Allocations: 7556)
+Completed 200 OK in 195ms (Views: 181.6ms | ActiveRecord: 8.0ms | Allocations: 9233)
+
+
+Started GET "/users/1/trips" for ::1 at 2021-03-31 13:39:00 -0400
+Processing by TripsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:4:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:5:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/index.erb within layouts/application
+  [1m[36mTrip Load (2.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/trips/index.erb:8
+  Rendered trips/index.erb within layouts/application (Duration: 5.1ms | Allocations: 1277)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 207.1ms | Allocations: 6608)
+Completed 200 OK in 214ms (Views: 203.7ms | ActiveRecord: 7.0ms | Allocations: 8019)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:39:02 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  [1m[36mTrip Load (1.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 1.3ms | Allocations: 969)
+  [1m[36mFlight Load (1.6ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 6.5ms | Allocations: 2225)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 177.9ms | Allocations: 7553)
+Completed 200 OK in 185ms (Views: 175.8ms | ActiveRecord: 5.8ms | Allocations: 9233)
+
+
+Started PATCH "/users/1/trips/1" for ::1 at 2021-03-31 13:39:09 -0400
+Processing by TripsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "trip"=>{"user_id"=>"1", "traveler_first_name"=>"test name", "traveler_last_name"=>"g", "traveler_gender"=>"m", "traveler_contact_info"=>"134243", "flight_id"=>"1"}, "commit"=>"Update Trip", "user_id"=>"1", "id"=>"1"}
+  [1m[36mTrip Load (1.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:45:in `update'
+[31mUnpermitted parameter: :flight_id[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trips_controller.rb:46:in `update'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:46:in `update'
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:46:in `update'
+  [1m[36mTrip Update (3.6ms)[0m  [1m[33mUPDATE "trips" SET "traveler_contact_info" = ?, "updated_at" = ? WHERE "trips"."id" = ?[0m  [["traveler_contact_info", "134243"], ["updated_at", "2021-03-31 17:39:09.222331"], ["id", 1]]
+  ↳ app/controllers/trips_controller.rb:46:in `update'
+  [1m[36mTRANSACTION (17.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trips_controller.rb:46:in `update'
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Redirected to http://localhost:3000/users/1/trips/1
+Completed 302 Found in 39ms (ActiveRecord: 26.7ms | Allocations: 4846)
+
+
+Started GET "/users/1/trips/1" for ::1 at 2021-03-31 13:39:09 -0400
+Processing by TripsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mTrip Load (1.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:23:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/show.erb within layouts/application
+  [1m[36mFlight Load (3.6ms)[0m  [1m[34mSELECT "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/show.erb:6
+  Rendered trips/show.erb within layouts/application (Duration: 6.2ms | Allocations: 805)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 189.2ms | Allocations: 6135)
+Completed 200 OK in 193ms (Views: 185.4ms | ActiveRecord: 6.2ms | Allocations: 7143)
+
+
+Started GET "/users/1/trips" for ::1 at 2021-03-31 13:39:12 -0400
+Processing by TripsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:4:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:5:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/index.erb within layouts/application
+  [1m[36mTrip Load (2.0ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/trips/index.erb:8
+  Rendered trips/index.erb within layouts/application (Duration: 5.7ms | Allocations: 1277)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 210.1ms | Allocations: 6608)
+Completed 200 OK in 216ms (Views: 207.6ms | ActiveRecord: 5.1ms | Allocations: 8033)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:39:13 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:37:in `edit'
+  [1m[36mTrip Load (2.9ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 2.1ms | Allocations: 969)
+  [1m[36mFlight Load (3.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 9.5ms | Allocations: 2225)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 202.5ms | Allocations: 7553)
+Completed 200 OK in 213ms (Views: 199.4ms | ActiveRecord: 8.7ms | Allocations: 9229)
+
+
+Started PATCH "/users/1/trips/1" for ::1 at 2021-03-31 13:39:15 -0400
+Processing by TripsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "trip"=>{"user_id"=>"1", "traveler_first_name"=>"test name", "traveler_last_name"=>"g", "traveler_gender"=>"m", "traveler_contact_info"=>"134243", "flight_id"=>"2"}, "commit"=>"Update Trip", "user_id"=>"1", "id"=>"1"}
+  [1m[36mTrip Load (1.5ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:45:in `update'
+[31mUnpermitted parameter: :flight_id[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trips_controller.rb:46:in `update'
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:46:in `update'
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:46:in `update'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trips_controller.rb:46:in `update'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Redirected to http://localhost:3000/users/1/trips/1
+Completed 302 Found in 18ms (ActiveRecord: 4.5ms | Allocations: 4189)
+
+
+Started GET "/users/1/trips/1" for ::1 at 2021-03-31 13:39:16 -0400
+Processing by TripsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mTrip Load (1.2ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:23:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/show.erb within layouts/application
+  [1m[36mFlight Load (1.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/show.erb:6
+  Rendered trips/show.erb within layouts/application (Duration: 3.7ms | Allocations: 806)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 184.6ms | Allocations: 6136)
+Completed 200 OK in 188ms (Views: 182.8ms | ActiveRecord: 3.8ms | Allocations: 7148)
+
+
+Started GET "/users/1/trips/1" for ::1 at 2021-03-31 13:39:45 -0400
+Processing by TripsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mTrip Load (1.2ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:23:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/show.erb within layouts/application
+  [1m[36mFlight Load (1.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/show.erb:6
+  Rendered trips/show.erb within layouts/application (Duration: 3.2ms | Allocations: 805)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 171.6ms | Allocations: 6136)
+Completed 200 OK in 175ms (Views: 169.7ms | ActiveRecord: 4.0ms | Allocations: 7151)
+
+
+Started GET "/users/1/trips/1" for ::1 at 2021-03-31 13:41:22 -0400
+Processing by TripsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/trips_controller.rb:23:in `show'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:23:in `show'
+  [1m[36mTrip Load (2.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/show.erb within layouts/application
+  [1m[36mFlight Load (2.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/show.erb:6
+  Rendered trips/show.erb within layouts/application (Duration: 36.7ms | Allocations: 8814)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 225.0ms | Allocations: 14145)
+Completed 200 OK in 302ms (Views: 212.4ms | ActiveRecord: 35.7ms | Allocations: 26830)
+
+
+Started GET "/users/1/trips/1" for ::1 at 2021-03-31 13:41:24 -0400
+Processing by TripsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:23:in `show'
+  [1m[36mTrip Load (2.1ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/show.erb within layouts/application
+  [1m[36mFlight Load (1.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/show.erb:6
+  Rendered trips/show.erb within layouts/application (Duration: 8.7ms | Allocations: 1022)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 177.8ms | Allocations: 6788)
+Completed 200 OK in 207ms (Views: 187.7ms | ActiveRecord: 6.6ms | Allocations: 8962)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:41:26 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  [1m[36mTrip Load (1.7ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:39:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 4.4ms | Allocations: 1218)
+  [1m[36mFlight Load (2.7ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 28.6ms | Allocations: 2954)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 219.5ms | Allocations: 8225)
+Completed 200 OK in 239ms (Views: 216.1ms | ActiveRecord: 7.4ms | Allocations: 10951)
+
+
+Started PATCH "/users/1/trips/1" for ::1 at 2021-03-31 13:41:29 -0400
+Processing by TripsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "trip"=>{"user_id"=>"1", "traveler_first_name"=>"test name", "traveler_last_name"=>"g", "traveler_gender"=>"m", "traveler_contact_info"=>"134243", "flight_id"=>"2"}, "commit"=>"Update Trip", "user_id"=>"1", "id"=>"1"}
+  [1m[36mTrip Load (1.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:46:in `update'
+[31mUnpermitted parameter: :flight_id[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trips_controller.rb:47:in `update'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:47:in `update'
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:47:in `update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trips_controller.rb:47:in `update'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Redirected to http://localhost:3000/users/1/trips/1
+Completed 302 Found in 17ms (ActiveRecord: 3.4ms | Allocations: 4422)
+
+
+Started GET "/users/1/trips/1" for ::1 at 2021-03-31 13:41:29 -0400
+Processing by TripsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:23:in `show'
+  [1m[36mTrip Load (1.8ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/show.erb within layouts/application
+  [1m[36mFlight Load (1.6ms)[0m  [1m[34mSELECT "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/trips/show.erb:6
+  Rendered trips/show.erb within layouts/application (Duration: 3.5ms | Allocations: 752)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 169.8ms | Allocations: 6081)
+Completed 200 OK in 179ms (Views: 167.6ms | ActiveRecord: 7.0ms | Allocations: 7515)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:41:50 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  [1m[36mTrip Load (1.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:39:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 1.1ms | Allocations: 969)
+  [1m[36mFlight Load (1.7ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 5.6ms | Allocations: 2228)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 171.3ms | Allocations: 7556)
+Completed 200 OK in 178ms (Views: 169.1ms | ActiveRecord: 5.7ms | Allocations: 9228)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:41:52 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  [1m[36mTrip Load (3.5ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:39:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 1.1ms | Allocations: 977)
+  [1m[36mFlight Load (2.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 34.8ms | Allocations: 8935)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 206.4ms | Allocations: 14206)
+Completed 200 OK in 290ms (Views: 195.1ms | ActiveRecord: 38.5ms | Allocations: 27926)
+
+
+Started PATCH "/users/1/trips/1" for ::1 at 2021-03-31 13:41:55 -0400
+Processing by TripsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "trip"=>{"user_id"=>"1", "traveler_first_name"=>"test name", "traveler_last_name"=>"g", "traveler_gender"=>"m", "traveler_contact_info"=>"134243", "flight_id"=>"2"}, "commit"=>"Update Trip", "user_id"=>"1", "id"=>"1"}
+  [1m[36mTrip Load (1.8ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:46:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trips_controller.rb:47:in `update'
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:47:in `update'
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:47:in `update'
+  [1m[36mTrip Update (4.9ms)[0m  [1m[33mUPDATE "trips" SET "flight_id" = ?, "updated_at" = ? WHERE "trips"."id" = ?[0m  [["flight_id", 2], ["updated_at", "2021-03-31 17:41:55.716674"], ["id", 1]]
+  ↳ app/controllers/trips_controller.rb:47:in `update'
+  [1m[36mTRANSACTION (19.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trips_controller.rb:47:in `update'
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Redirected to http://localhost:3000/users/1/trips/1
+Completed 302 Found in 48ms (ActiveRecord: 30.6ms | Allocations: 5946)
+
+
+Started GET "/users/1/trips/1" for ::1 at 2021-03-31 13:41:55 -0400
+Processing by TripsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:23:in `show'
+  [1m[36mTrip Load (1.2ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/show.erb within layouts/application
+  [1m[36mFlight Load (1.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/show.erb:6
+  Rendered trips/show.erb within layouts/application (Duration: 3.5ms | Allocations: 1437)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 205.1ms | Allocations: 6766)
+Completed 200 OK in 212ms (Views: 204.0ms | ActiveRecord: 5.1ms | Allocations: 8283)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:42:53 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  [1m[36mTrip Load (1.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:39:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 1.2ms | Allocations: 969)
+  [1m[36mFlight Load (1.6ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 5.6ms | Allocations: 2225)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 186.9ms | Allocations: 7554)
+Completed 200 OK in 195ms (Views: 185.2ms | ActiveRecord: 5.8ms | Allocations: 9231)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:42:55 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  [1m[36mTrip Load (1.7ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:39:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 4.8ms | Allocations: 1214)
+  [1m[36mFlight Load (1.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 20.1ms | Allocations: 2829)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 191.7ms | Allocations: 8591)
+Completed 200 OK in 216ms (Views: 199.6ms | ActiveRecord: 5.7ms | Allocations: 11007)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:42:57 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  [1m[36mTrip Load (1.5ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:39:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 1.1ms | Allocations: 969)
+  [1m[36mFlight Load (1.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 4.9ms | Allocations: 2229)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 164.8ms | Allocations: 7558)
+Completed 200 OK in 173ms (Views: 163.1ms | ActiveRecord: 5.5ms | Allocations: 9235)
+
+
+Started GET "/users/1/trips/1" for ::1 at 2021-03-31 13:42:59 -0400
+Processing by TripsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:23:in `show'
+  [1m[36mTrip Load (2.5ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/show.erb within layouts/application
+  [1m[36mFlight Load (3.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/show.erb:6
+  Rendered trips/show.erb within layouts/application (Duration: 12.1ms | Allocations: 1019)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 217.0ms | Allocations: 6355)
+Completed 200 OK in 233ms (Views: 212.9ms | ActiveRecord: 9.4ms | Allocations: 7914)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:43:01 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  [1m[36mTrip Load (1.5ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:39:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 1.2ms | Allocations: 969)
+  [1m[36mFlight Load (1.9ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 7.1ms | Allocations: 2229)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 214.2ms | Allocations: 7557)
+Completed 200 OK in 222ms (Views: 211.8ms | ActiveRecord: 6.3ms | Allocations: 9239)
+
+
+Started PATCH "/users/1/trips/1" for ::1 at 2021-03-31 13:43:09 -0400
+Processing by TripsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "trip"=>{"user_id"=>"1", "traveler_first_name"=>"test name", "traveler_last_name"=>"g", "traveler_gender"=>"m", "traveler_contact_info"=>"134243", "flight_id"=>"2"}, "commit"=>"Update Trip", "user_id"=>"1", "id"=>"1"}
+  [1m[36mTrip Load (1.7ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:46:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trips_controller.rb:47:in `update'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:47:in `update'
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:47:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trips_controller.rb:47:in `update'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+Redirected to http://localhost:3000/users/1/trips/1
+Completed 302 Found in 12ms (ActiveRecord: 3.3ms | Allocations: 4162)
+
+
+Started GET "/users/1/trips/1" for ::1 at 2021-03-31 13:43:09 -0400
+Processing by TripsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:23:in `show'
+  [1m[36mTrip Load (1.2ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/show.erb within layouts/application
+  [1m[36mFlight Load (2.6ms)[0m  [1m[34mSELECT "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/show.erb:6
+  Rendered trips/show.erb within layouts/application (Duration: 5.2ms | Allocations: 747)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 200.6ms | Allocations: 6077)
+Completed 200 OK in 208ms (Views: 198.1ms | ActiveRecord: 6.5ms | Allocations: 7503)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:43:10 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  [1m[36mTrip Load (1.2ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:39:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 1.1ms | Allocations: 969)
+  [1m[36mFlight Load (1.8ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 6.3ms | Allocations: 2226)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 186.4ms | Allocations: 7554)
+Completed 200 OK in 193ms (Views: 184.5ms | ActiveRecord: 5.6ms | Allocations: 9227)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:43:28 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  [1m[36mTrip Load (1.6ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:39:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 3.0ms | Allocations: 969)
+  [1m[36mFlight Load (4.8ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 14.6ms | Allocations: 2226)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 215.1ms | Allocations: 7554)
+Completed 200 OK in 228ms (Views: 210.9ms | ActiveRecord: 10.1ms | Allocations: 9233)
+
+
+Started GET "/users/1/trips/1/edit" for ::1 at 2021-03-31 13:43:30 -0400
+Processing by TripsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:38:in `edit'
+  [1m[36mTrip Load (2.2ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ? AND "trips"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:39:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/edit.erb within layouts/application
+  Rendered trips/_form.erb (Duration: 5.4ms | Allocations: 1214)
+  [1m[36mFlight Load (2.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/trips/edit.erb:8
+  Rendered trips/edit.erb within layouts/application (Duration: 85.7ms | Allocations: 7870)
+  Rendered layout layouts/application.html.erb (Duration: 86.6ms | Allocations: 7940)
+Completed 500 Internal Server Error in 118ms (ActiveRecord: 6.1ms | Allocations: 10340)
+
+
+  
+ActionView::Template::Error (undefined method `asd' for #<Flight:0x00007fbbad4c25c8>):
+     5:         <%= f.hidden_field :user_id %> 
+     6:         <%= render partial: 'form', locals: {f: f}%>
+     7:         <%= f.label "Change Flight:" %>
+     8:         <%= f.collection_select :flight_id, Flight.all, :id, "asd" %>
+     9:         <div class="show-btn">
+    10:             <%= f.submit %>
+    11:         </div>
+  
+app/views/trips/edit.erb:8
+app/views/trips/edit.erb:4
+Started GET "/users/1/trips/1" for ::1 at 2021-03-31 13:44:31 -0400
+Processing by TripsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:23:in `show'
+  [1m[36mTrip Load (1.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering trips/show.erb within layouts/application
+  [1m[36mFlight Load (2.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/trips/show.erb:6
+  Rendered trips/show.erb within layouts/application (Duration: 11.0ms | Allocations: 1019)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 178.4ms | Allocations: 6779)
+Completed 200 OK in 203ms (Views: 187.3ms | ActiveRecord: 6.7ms | Allocations: 8952)
+
+

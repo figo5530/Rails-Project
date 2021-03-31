@@ -20,7 +20,8 @@ class TripsController < ApplicationController
 
     def show
         #
-        @trip = Trip.find_by(id: params[:id])
+            @user = User.find(params[:user_id])
+            @trip = Trip.find_by(id: params[:id])
       end
 
     def create
@@ -41,8 +42,18 @@ class TripsController < ApplicationController
         end
     end
 
+    def update
+        @trip = Trip.find_by(id: params[:id])
+        if @trip.update(trip_params)
+            redirect_to user_trip_path(current_user, @trip)
+        else
+            @errors = @trip.errors.full_messages
+            render :edit
+        end
+    end
+
     private
     def trip_params
-        params.require(:trip).permit(:traveler_first_name, :traveler_last_name, :traveler_gender, :traveler_contact_info, :user_id)
+        params.require(:trip).permit(:traveler_first_name, :traveler_last_name, :traveler_gender, :traveler_contact_info, :user_id, :flight_id)
     end
 end
