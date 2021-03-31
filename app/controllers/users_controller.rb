@@ -4,6 +4,10 @@ class UsersController < ApplicationController
         
     end
 
+    def index
+        @trips = current_user.trips
+    end
+
     def new
         @user = User.new
     end

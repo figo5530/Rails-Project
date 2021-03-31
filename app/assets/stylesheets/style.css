@@ -121,7 +121,7 @@ a:visited {
 
 a:hover,
 a:active {
-    color: #555;
+    color: #03413e;
     border-bottom: 1px solid transparent;
 }
 
@@ -157,7 +157,7 @@ input[type=submit] {
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-    background-color: #cf6d17;
+    background-color: #089792;
 }
 
 .btn-full:hover,
@@ -204,18 +204,7 @@ input[type=submit]:active {
 }
 
 
-/* Mobile navi */
-.mobile-nav-icon {
-    float: right;
-    margin-top: 30px;
-    cursor: pointer;
-    display: none;
-}
 
-.mobile-nav-icon i {
-    font-size: 200%;
-    color: #fff;
-}
 
 
 
