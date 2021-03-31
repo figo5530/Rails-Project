@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root 'users#home'
   resources :users do
-    resources :trips, only: [:index, :show, :edit, :update]
+    resources :trips, only: [:index, :show, :edit, :update, :destroy]
   end
 
   resources :flights do

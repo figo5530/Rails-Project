@@ -52,6 +52,13 @@ class TripsController < ApplicationController
         end
     end
 
+    def destroy
+        @user = User.find_by(id: params[:user_id])
+        @trip = Trip.find_by(id: params[:id])
+        @trip.delete
+        redirect_to user_trips_path
+    end
+
     private
     def trip_params
         params.require(:trip).permit(:traveler_first_name, :traveler_last_name, :traveler_gender, :traveler_contact_info, :user_id, :flight_id)

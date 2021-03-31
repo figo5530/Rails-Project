@@ -16,7 +16,7 @@
 <%= @trip.traveler_contact_info %><br>
 
 <%= link_to 'Edit Info', edit_user_trip_path(@user, @trip) %>
-<%= link_to 'Cancel Trip' %>
+<%= button_to "Cancel Trip", [@user, @trip], method: :delete, data: { confirm: "Really?" } %>
     </div>
     </div>
 </section>
