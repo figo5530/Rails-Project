@@ -1,3 +1,10 @@
-<h1>Hi, <%= @user.username %>!</h1>
-<%= link_to 'Log Out', '/logout' %>
-<%= link_to 'Check out flights', flights_path %>
+<section>
+<div class="row">
+  <div class="vertical-center">
+    <h1>Hi, <%= @user.username %>! Ready For Your Next Trip?</h1>
+    <div class="show-btn">
+    <%= button_to 'Go', flights_path, method: :get%>
+    </div>
+  </div>
+</div>
+</section>

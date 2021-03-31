@@ -2,8 +2,10 @@ Rails.application.routes.draw do
   resources :flights
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root 'users#home'
-  resources :users 
-  
+  resources :users do
+    resources :trips, only: [:index, :edit]
+  end
+
   resources :flights do
     resources :trips
   end
@@ -13,3 +15,8 @@ Rails.application.routes.draw do
   get '/logout', to: 'sessions#destroy'
   get '/auth/facebook/callback', to: 'sessions#create_with_fb'
 end
+
+#scope method for flight and trip
+#edit trip with different flght
+#delete trip
+

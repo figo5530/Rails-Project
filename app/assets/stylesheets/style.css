@@ -2,18 +2,32 @@
 Orange color: #e67e22
 0ABAB5
 */
-
-
 /* ----------------------------------------------- */
 /* BASIC SETUP */
 /* ----------------------------------------------- */
+  
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.show-btn {
+    padding-top: 40px;
+    text-align: center;
+}
+.show-btn2 {
+    padding-top: 20px;
+    text-align: center;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html,
 body {
     background-color: #fff;
@@ -24,7 +38,6 @@ body {
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
-
 .clearfix {zoom: 1;}
 .clearfix:after {
     content: '.';
@@ -45,7 +58,7 @@ body {
 }
 
 section {
-    padding: 80px 0;
+    padding: 120px 0;
 }
 
 .box {
@@ -92,6 +105,23 @@ h2:after {
     margin-top: 30px;
 }
 
+/* ----------------------------------------------- */
+/* TESTIMONIALS */
+/* ----------------------------------------------- */
+
+.section-flights {   
+    background-size: cover;
+    background-color: #fff;
+    color: #0ABAB5;
+    background-attachment: fixed;
+}
+
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
 /* ----- PARAGRAPHS ----- */
 .long-copy {
     line-height: 145%;
@@ -104,11 +134,7 @@ h2:after {
     line-height: 145%;
 }
 
-
-
-
 /* ----- LINKS ----- */
-
 a:link,
 a:visited {
     color: #0ABAB5;
@@ -171,9 +197,6 @@ input[type=submit]:active {
     color: #fff;
 }
 
-
-
-
 /* Main navi */
 .main-nav {
     float: right;
@@ -203,32 +226,28 @@ input[type=submit]:active {
     border-bottom: 2px solid #0ABAB5;
 }
 
-
-
-
-
-
 /* ----------------------------------------------- */
 /* FORM */
 /* ----------------------------------------------- */
 
-.contact-form {
+.form {
     width: 60%;
-    margin: 0 auto;
+    margin: 10 auto;
 }
 
 input[type=text],
+input[type=password],
 input[type=email],
 select,
 textarea {
     width: 100%;
-    padding: 7px;
+    padding: 3px;
     border-radius: 3px;
     border: 1px solid #ccc;
 }
 
 textarea {
-    height: 100px;
+    height: 80px;
 }
 
 input[type=checkbox] {

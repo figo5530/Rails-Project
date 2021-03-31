@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     end
 
     def index
-        @trips = current_user.trips
+        # @trips = current_user.trips
     end
 
     def new

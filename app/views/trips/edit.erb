@@ -1,6 +1,5 @@
-<%= form_for([@user, @team]) do |f| %>
+<%= form_for @trip, url: user_trips_path(@user), method: :patch do |f| %>
     <strong><%= f.label "Change team name" %></strong>
-    <%= f.text_field :name %>
     <%= f.hidden_field :user_id %>
     <%= f.submit %>
 <% end %>

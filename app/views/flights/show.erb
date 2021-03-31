@@ -1,22 +1,28 @@
+<section>
+    <div class="row">
+    <div class="vertical-center">
+        <%= @flight.flight_number %><br>
+    <br>
 
-<%= @flight.flight_number %><br>
-<br>
+    <div>
+        <%= @flight.departure_time %>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <%= @flight.arrival_time %>
+    </div>
+    <div>
+        <%= @flight.from %>
+        ------<%= @flight.flight_duration %>------
+        <%= @flight.to %>
+    </div>
+    <br>
 
-<div>
-    <%= @flight.departure_time %>
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    <%= @flight.arrival_time %>
-</div>
-<div>
-    <%= @flight.from %>
-    ------<%= @flight.flight_duration %>------
-    <%= @flight.to %>
-</div>
-<br>
-
-<% if current_user %>
-    <%= button_to 'Book', new_flight_trip_path(@flight), method: :get %>
-<% else %>
-    <%= button_to 'Book', '/signin' %>
-<% end %>
-
+    <div class="show-btn">
+    <% if current_user %>
+        <%= button_to 'Book', new_flight_trip_path(@flight), method: :get %>
+    <% else %>
+        <%= button_to 'Book', '/signin' %>
+    <% end %>
+    </div>
+    </div>
+    </div>
+</section>

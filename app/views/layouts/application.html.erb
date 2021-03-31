@@ -8,31 +8,30 @@
 
     <%# <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %> 
     <%= stylesheet_link_tag 'style', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'grid', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
+    <header>
     <nav>
       <div class="row">
           <ul class="main-nav js--main-nav">
-          
           <% if current_user %>
               <li><%= link_to 'Home Page', user_path(current_user) %></li>
               <li><%= link_to 'Check Flights', flights_path %></li>
-              <li><%= link_to 'My Trip', users_path %></li>
+              <li><%= link_to 'My Trip', user_trips_path(current_user) %></li>
               <li><%= link_to 'Log Out', '/logout' %></li>
           <% else %>
               <li><%= link_to 'Home Page', '/' %></li>
               <li><%= link_to 'Sign In', '/signin' %></li>
               <li><%= link_to 'Sign Up', new_user_path %></li>
           <% end %>
-          
           </ul>
-          <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
       </div>
     </nav>
+  </header>
   <%= yield %>
-
   </body>
 </html>

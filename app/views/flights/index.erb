@@ -1,10 +1,19 @@
 
-<% @flights.each do |flight| %>
-    <div>
-        <ul>
-            <li>From: <%= flight.from %> To: <%= flight.to %></li>
-            <li>Departure Time: <%= flight.departure_time %> Arrival Time: <%= flight.arrival_time %></li>
-            <%= link_to 'Flight Details', flight_path(flight) %>
-        </ul>
+<section class="section-flights">
+    <div class="row">
+        <h2>All Flights</h2>
     </div>
-<% end %>
+    <% @flights.each.with_index do |f, i| %>
+        <% if i%3 == 0 %>
+            <div class="row">
+        <% end %>
+        <div class="col span-1-of-3">
+            <p>From: <%= f.from %> To: <%= f.to %></p>
+            <p>Departure Time: <%= f.departure_time %> Arrival Time: <%= f.arrival_time %></p>
+                <%= button_to 'Flight Details', flight_path(f), method: :get%>
+        </div>
+        <% if i%3 == 2 || i == @flights.length-1 %>
+            </div>
+        <% end %>
+    <% end %>
+</section>

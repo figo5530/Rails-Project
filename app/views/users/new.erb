@@ -5,16 +5,28 @@
     <% end %>
     </ul>
 <% end %>
+<section>
+    <div class="row">
+    <div class="vertical-center">
+    <%= form_for(@user) do |f| %>
+        <%= f.label :username %>
+        <%= f.text_field :username %><br>
+        <%= f.label :email %>
+        <%= f.text_field :email %><br>
+        <%= f.label :password %>
+        <%= f.password_field :password %><br>
+        <%= f.label :password_confirmation %>
+        <%= f.password_field :password_confirmation %><br>
+        
+        <div class="show-btn">
+            <%= f.submit 'Sign Up' %>
+        </div>
 
-<%= form_for(@user) do |f| %>
-    <%= f.label :username %>
-    <%= f.text_field :username %><br>
-    <%= f.label :email %>
-    <%= f.text_field :email %><br>
-    <%= f.label :password %>
-    <%= f.password_field :password %><br>
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation %><br>
-    <%= f.submit 'Sign Up' %>
-<% end %>
-    <%= button_to 'Sign Up With Facebook', '/auth/facebook' %>
+    <% end %>
+
+    <div class="show-btn2">
+        <%= button_to 'Sign Up With Facebook', '/auth/facebook' %>
+    </div>
+    </div>
+    </div>
+</section>
