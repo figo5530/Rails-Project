@@ -9,7 +9,8 @@ class SessionsController < ApplicationController
             session[:user_id] = @user.id
             redirect_to user_path(@user)
         else
-            @errors = "invalid username or password"
+            @errors = []
+            @errors << "invalid username or password"
             render :new
         end
     end

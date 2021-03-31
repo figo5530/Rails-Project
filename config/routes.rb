@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   end
 
   resources :flights do
-    resources :trips
+    resources :trips, only: [:new, :create]
   end
   
   get '/signin', to: 'sessions#new'
@@ -17,6 +17,6 @@ Rails.application.routes.draw do
 end
 
 #scope method for flight and trip
-#edit trip with different flght
-#delete trip
+#errors display
+
 

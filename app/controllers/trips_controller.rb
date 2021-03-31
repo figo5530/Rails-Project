@@ -20,8 +20,8 @@ class TripsController < ApplicationController
 
     def show
         #
-            @user = User.find(params[:user_id])
-            @trip = Trip.find_by(id: params[:id])
+        @user = User.find(params[:user_id])
+        @trip = Trip.find_by(id: params[:id])
       end
 
     def create
@@ -29,8 +29,13 @@ class TripsController < ApplicationController
         @trip = Trip.new(trip_params)
         @trip.user = current_user
         @trip.flight_id = params[:flight_id]
-        @trip.save
-        redirect_to flight_trip_path(@trip.flight, @trip)
+        if @trip.save
+            redirect_to user_trip_path(current_user, @trip)
+        else
+            @errors = @trip.errors.full_messages
+            @flight = @trip.flight
+            render :new
+        end
     end
 
     def edit
@@ -48,6 +53,7 @@ class TripsController < ApplicationController
             redirect_to user_trip_path(current_user, @trip)
         else
             @errors = @trip.errors.full_messages
+            @user = current_user
             render :edit
         end
     end
