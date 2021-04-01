@@ -4,5 +4,8 @@ class Flight < ApplicationRecord
     has_many :trips
     has_many :users, through: :trips
     scope(:city_search, ->(from_city) {self.where("from_city like ?", from_city) })
+    def flight_full_info
+        "#{flight_number} | #{from} | #{to} | #{departure_time} | #{arrival_time}"
+    end
 
 end

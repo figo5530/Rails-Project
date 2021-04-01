@@ -4,7 +4,9 @@
         <div class="container">
             <div class="hotel_booking_table">
               <div class="col-md-3">
-                     <h2><%= f.label "Traveler Info" %></h2>
+                     <h2>Traveler<br>
+                     <p></p>
+                     Info</h2>
                      <p></p>
               </div>
               <%= f.hidden_field :user_id %>
@@ -50,6 +52,15 @@
                                             <p></p>
                                             <%= f.text_field :traveler_gender %></h6>
                                     </div>
+    
+                                    <% if params[:action] == "edit" %>    
+                                    <div class="input-group">
+                                        <h6><%= f.label "Select Another Flight" %><br>
+                                            <p></p>
+                                            <%= f.collection_select :flight_id, Flight.all, :id, :flight_full_info %></h6>
+                                    </div>
+                                    <% end %>
+
                                     <p></p><br>
                                           <%= f.submit :class => "book_now_btn button_hover"%>
                                 </div>

@@ -1,9 +1,9 @@
 <section>
-    <div class="hotel_booking_area position">
+<div class="hotel_booking_area position">
         <div class="container">
             <div class="hotel_booking_table">
                 <div class="col-md-3">
-                    <h2>Traveler<br>Info</h2>
+                    <h2>Traveler<br><%= t.traveler_first_name %> <%= t.traveler_last_name %></h2>
                 </div>
                 <div class="col-md-9">
                     <div class="boking_table">
@@ -12,16 +12,16 @@
                                 <div class="book_tabel_item">
                                     <div class="form-group">
                                         <div class='input-group'>
-                                            <h6>First Name<br>
+                                            <h6>Flight Number<br>
                                             <p></p> 
-                                            <%= t.traveler_first_name %></h6>
+                                            <%= t.flight.flight_number %></h6>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class='input-group'>
-                                            <h6>Contact Info<br>
+                                            <h6>From &nbsp To<br>
                                             <p></p> 
-                                            <%= t.traveler_contact_info %></h6>
+                                            <%= t.flight.from %>&nbsp&nbsp&nbsp&nbsp&nbsp<%= t.flight.to %></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -29,27 +29,26 @@
                             <div class="col-md-4">
                                 <div class="book_tabel_item">
                                     <div class="input-group">
-                                        <h6>Last Name<br>
+                                        <h6>Departure Time<br>
                                             <p></p>
-                                            <%= t.traveler_last_name %></h6>
+                                            <%= t.flight.departure_time %></h6>
                                     </div>
                                     <div class="input-group">
-                                        <h6>Seat<br>
+                                        <h6>Arrival Time<br>
                                             <p></p>
-                                            <%= t.seat %></h6>
+                                            <%= t.flight.arrival_time %></h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="book_tabel_item">
                                     <div class="input-group">
-                                        <h6>Gender<br>
+                                        <h6>Traveler Contact Info<br>
                                             <p></p>
-                                            <%= t.traveler_gender %></h6>
+                                            <%= t.traveler_contact_info %></h6>
                                     </div>
-                                    <%= link_to 'Edit Info', edit_user_trip_path(@user, t), :class => "book_now_btn button_hover"%>
-                                    <p></p>
-                                    <%= button_to "Cancel Trip", [@user, t], method: :delete, data: { confirm: "Really?" }, :class => "book_now_btn button_hover" %>
+                                    <p></p><br>
+                                    <%= link_to 'Trip Detail', user_trip_path(@user, t), :class => "book_now_btn button_hover"%>
                                 </div>
                             </div>
                         </div>

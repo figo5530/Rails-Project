@@ -1,16 +1,12 @@
-<%= render partial: "users/errors", locals: {errors: @errors} %>
-<section>
-    <div class="row">
-    <div class="vertical-center">
-    <%= form_for([@user, @trip]) do |f| %>
-        <%= f.hidden_field :user_id %> 
-        <%= render partial: 'form', locals: {f: f}%>
-        <%= f.label "Change Flight:" %>
-        <%= f.collection_select :flight_id, Flight.all, :id, :flight_number %>
-        <div class="show-btn">
-            <%= f.submit %>
+<section class="accomodation_area section_gap">
+    <div class="container">
+        <div class="section_title text-center">
+        <h2>Edit Trip</h2>
         </div>
-    <% end %>
-    </div>
     </div>
 </section>
+<%= render partial: "users/errors", locals: {errors: @errors} %>
+<%= form_for([@user, @trip]) do |f| %>
+    <%= f.hidden_field :user_id %> 
+    <%= render partial: 'form', locals: {f: f}%>
+<% end %>
