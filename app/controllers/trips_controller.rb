@@ -1,5 +1,7 @@
 class TripsController < ApplicationController
     layout "layout"
+    before_action :require_logged_in
+
     def index
         if params[:traveler_first_name]
             @trips = Trip.trip_search(params[:traveler_first_name])

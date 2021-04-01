@@ -1,15 +1,10 @@
-
-        <%# <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css"> %>
-        <!-- main css -->
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FL</title>
+    <title>Trip</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%# <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %> 
     <%= stylesheet_link_tag 'style_layout', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'bootstrap', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -38,8 +33,6 @@
             </div>
         </header>
         <!--================Header Area =================-->
-        
-        <!--================Banner Area =================-->
         <%= yield %>
     </body>
 </html>

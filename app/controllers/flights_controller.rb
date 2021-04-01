@@ -1,6 +1,7 @@
 class FlightsController < ApplicationController
     layout "layout"
-    before_action :set_flight, except: [:index, :new, :create]
+    before_action :set_flight, only: [:show]
+    before_action :require_logged_in
     
     def index
         if params[:from_city]

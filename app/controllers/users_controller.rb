@@ -1,14 +1,11 @@
 class UsersController < ApplicationController
     before_action :set_user, only: [:show]
+    before_action :home_page_if_logged_in, only: [:new]
+    before_action :require_logged_in, only: [:show]
     layout "layout"
     def home
         
     end
-
-    def index
-        # @trips = current_user.trips
-    end
-
     def new
         @user = User.new
     end
