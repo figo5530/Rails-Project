@@ -1,34 +1,25 @@
 class TripsController < ApplicationController
     layout "layout"
     before_action :require_logged_in
+    before_action :set_user_and_trip, only: [:show, :edit, :update, :destroy]
 
     def index
+        @user = User.find(params[:user_id])
         if params[:traveler_first_name]
             @trips = Trip.trip_search(params[:traveler_first_name])
-            @user = User.find(params[:user_id])
-        elsif params[:user_id]
-            @user = User.find(params[:user_id])
-            @trips = User.find(params[:user_id]).trips
-        else
-            @trips = Trip.all
+        else params[:user_id]
+            @trips = @user.trips
         end
     end
     
     def new
         #
-        if params[:flight_id]
-            @flight = Flight.find_by(params[:flight_id])
-            @trip = @flight.trips.build
-        else
-            
-        end
+        @flight = Flight.find_by(params[:flight_id])
+        @trip = @flight.trips.build
     end
 
     def show
-        #
-        @user = User.find(params[:user_id])
-        @trip = Trip.find_by(id: params[:id])
-      end
+    end
 
     def create
         #
@@ -45,28 +36,18 @@ class TripsController < ApplicationController
     end
 
     def edit
-        if params[:user_id]
-            @user = User.find_by(id: params[:user_id])
-            @trip = @user.trips.find_by(id: params[:id])
-        else
-            @trip = Trip.find_by(id: params[:id])
-        end
     end
 
     def update
-        @trip = Trip.find_by(id: params[:id])
         if @trip.update(trip_params)
-            redirect_to user_trip_path(current_user, @trip)
+            redirect_to user_trip_path(@user, @trip)
         else
             @errors = @trip.errors.full_messages
-            @user = current_user
             render :edit
         end
     end
 
     def destroy
-        @user = User.find_by(id: params[:user_id])
-        @trip = Trip.find_by(id: params[:id])
         @trip.delete
         redirect_to user_trips_path
     end
@@ -74,5 +55,10 @@ class TripsController < ApplicationController
     private
     def trip_params
         params.require(:trip).permit(:traveler_first_name, :traveler_last_name, :traveler_gender, :traveler_contact_info, :seat, :user_id, :flight_id)
+    end
+
+    def set_user_and_trip
+        @user = User.find_by(id: params[:user_id])
+        @trip = Trip.find_by(id: params[:id])
     end
 end
