@@ -3,6 +3,6 @@ class Flight < ApplicationRecord
     validates_uniqueness_of :flight_number
     has_many :trips
     has_many :users, through: :trips
-    scope(:number_search, ->(flight_number) {self.where("flight_number = ?", flight_number) })
+    scope(:city_search, ->(from_city) {self.where("from_city like ?", from_city) })
 
 end

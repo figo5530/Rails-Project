@@ -3,8 +3,8 @@ class FlightsController < ApplicationController
     before_action :set_flight, except: [:index, :new, :create]
     
     def index
-        if params[:flight_number]
-            @flights = Flight.number_search(params[:flight_number])
+        if params[:from_city]
+            @flights = Flight.city_search(params[:from_city])
         else
             @flights = Flight.all
         end

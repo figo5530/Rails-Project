@@ -4,7 +4,7 @@
             <h2 class="title_color">Search for Flight</h2>
             <p>&nbsp</p>
             <%= form_tag flights_path, method: :get do %>
-                <%= text_field_tag :flight_number, "Search by flight number" %>
+                <%= text_field_tag :from_city, "Search by Departure City" %>
                 <p>&nbsp</p>
                 <%= submit_tag "Search", :class => "btn theme_btn button_hover" %>
             <% end %>

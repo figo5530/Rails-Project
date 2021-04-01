@@ -1,13 +1,15 @@
-<section>
-    <div class="row">
-    <div class="vertical-center">
-    <%= render partial: "trip_detail", locals: {trip: @trip} %>
-
-        <%= link_to 'Edit Info', edit_user_trip_path(@user, @trip) %>
-
-    <div class="show-btn">
-        <%= button_to "Cancel Trip", [@user, @trip], method: :delete, data: { confirm: "Really?" } %>
-    </div>
-    </div>
+<section class="accomodation_area section_gap">
+    <div class="container">
+        <div class="section_title text-center">
+        <h2>Trip Detail</h2>
+        </div>
     </div>
 </section>
+    <%= render partial: "flights/flight_detail", locals: {f: @trip.flight} %>
+    <p></p>
+    <%= render partial: "traveler_detail", locals: {t: @trip} %>
+
+
+
+
+    <%= button_to "Cancel Trip", [@user, @trip], method: :delete, data: { confirm: "Really?" } %>

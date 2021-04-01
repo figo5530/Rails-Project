@@ -1,13 +1,10 @@
-
-</section>
+<section>
     <div class="hotel_booking_area position">
         <div class="container">
             <div class="hotel_booking_table">
-              <div class="col-md-3">
-                     <h2><%= f.label "Traveler Info" %></h2>
-                     <p></p>
-              </div>
-              <%= f.hidden_field :user_id %>
+                <div class="col-md-3">
+                    <h2>Traveler<br>Info</h2>
+                </div>
                 <div class="col-md-9">
                     <div class="boking_table">
                         <div class="row">
@@ -15,16 +12,16 @@
                                 <div class="book_tabel_item">
                                     <div class="form-group">
                                         <div class='input-group'>
-                                          <h6><%= f.label "First name" %><br>
-                                          <p></p>
-                                          <%= f.text_field :traveler_first_name %></h6>
+                                            <h6>First Name<br>
+                                            <p></p> 
+                                            <%= t.traveler_first_name %></h6>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class='input-group'>
-                                            <h6><%= f.label "Contact info" %><br>
+                                            <h6>Contact Info<br>
                                             <p></p> 
-                                            <%= f.text_field :traveler_contact_info %></h6>
+                                            <%= t.traveler_contact_info %></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -32,26 +29,26 @@
                             <div class="col-md-4">
                                 <div class="book_tabel_item">
                                     <div class="input-group">
-                                        <h6><%= f.label "Last name" %><br>
+                                        <h6>Last Name<br>
                                             <p></p>
-                                            <%= f.text_field :traveler_last_name %></h6>
+                                            <%= t.traveler_last_name %></h6>
                                     </div>
                                     <div class="input-group">
-                                        <h6><%= f.label "Seat" %><br>
+                                        <h6>Seat<br>
                                             <p></p>
-                                            <%= f.text_field :seat %></h6>
+                                            <%= t.seat %></h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="book_tabel_item">
                                     <div class="input-group">
-                                        <h6><%= f.label "Gender" %><br>
+                                        <h6>Gender<br>
                                             <p></p>
-                                            <%= f.text_field :traveler_gender %></h6>
+                                            <%= t.traveler_gender %></h6>
                                     </div>
                                     <p></p><br>
-                                          <%= f.submit :class => "book_now_btn button_hover"%>
+                                    <%= link_to 'Edit Info', edit_user_trip_path(@user, t), :class => "book_now_btn button_hover"%>
                                 </div>
                             </div>
                         </div>
@@ -61,5 +58,3 @@
         </div>
     </div>
 </section>
-
-        

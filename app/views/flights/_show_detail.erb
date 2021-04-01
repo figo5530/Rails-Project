@@ -1,13 +1,16 @@
-
 </section>
     <div class="hotel_booking_area position">
         <div class="container">
             <div class="hotel_booking_table">
-              <div class="col-md-3">
-                     <h2><%= f.label "Traveler Info" %></h2>
-                     <p></p>
-              </div>
-              <%= f.hidden_field :user_id %>
+                <div class="col-md-3">
+                    <h6>From</h6>
+                    <p></p>
+                    <h2><%= flight.from_city %></h2>
+                    <p></p>
+                    <h6>To</h6>
+                    <p></p>
+                    <h2><%= flight.to_city %></h2>
+                </div>
                 <div class="col-md-9">
                     <div class="boking_table">
                         <div class="row">
@@ -15,16 +18,16 @@
                                 <div class="book_tabel_item">
                                     <div class="form-group">
                                         <div class='input-group'>
-                                          <h6><%= f.label "First name" %><br>
-                                          <p></p>
-                                          <%= f.text_field :traveler_first_name %></h6>
+                                            <h6>Flight Number<br>
+                                            <p></p> 
+                                            <%= flight.flight_number %></h6>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class='input-group'>
-                                            <h6><%= f.label "Contact info" %><br>
+                                            <h6>Duration<br>
                                             <p></p> 
-                                            <%= f.text_field :traveler_contact_info %></h6>
+                                            <%= flight.flight_duration %></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -32,26 +35,28 @@
                             <div class="col-md-4">
                                 <div class="book_tabel_item">
                                     <div class="input-group">
-                                        <h6><%= f.label "Last name" %><br>
+                                        <h6>Departure<br>
                                             <p></p>
-                                            <%= f.text_field :traveler_last_name %></h6>
+                                            <%= flight.from %>&nbsp&nbsp&nbsp
+                                            <%= flight.departure_time %></h6>
                                     </div>
                                     <div class="input-group">
-                                        <h6><%= f.label "Seat" %><br>
+                                        <h6>Remaining Seat<br>
                                             <p></p>
-                                            <%= f.text_field :seat %></h6>
+                                            <%= flight.seat_remain %></h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="book_tabel_item">
                                     <div class="input-group">
-                                        <h6><%= f.label "Gender" %><br>
+                                        <h6>Arrival<br>
                                             <p></p>
-                                            <%= f.text_field :traveler_gender %></h6>
+                                            <%= flight.to %>&nbsp&nbsp&nbsp
+                                            <%= flight.arrival_time %></h6>
                                     </div>
                                     <p></p><br>
-                                          <%= f.submit :class => "book_now_btn button_hover"%>
+                                    <%= link_to "#{ flight.price }$", new_flight_trip_path(flight), :class => "book_now_btn button_hover" %>
                                 </div>
                             </div>
                         </div>
@@ -61,5 +66,3 @@
         </div>
     </div>
 </section>
-
-        

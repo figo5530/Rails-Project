@@ -1,14 +1,13 @@
-<%= render partial: 'users/errors', locals: {errors: @errors} %>
-
-<section>
-    <div class="row">
-    <div class="vertical-center">
-    <%= form_for([@flight, @trip]) do |f| %>
-       <%= render partial: 'form', locals: {f: f}%>
-       <div class="show-btn">
-            <%= f.submit %>
+<section class="accomodation_area section_gap">
+    <div class="container">
+        <div class="section_title text-center">
+        <h2>Book a Flight</h2>
         </div>
-    <% end %>
-    </div>
     </div>
 </section>
+
+<%= render partial: 'users/errors', locals: {errors: @errors} %>
+
+<%= form_for([@flight, @trip]) do |f| %>
+    <%= render partial: 'form', locals: {f: f}%>
+<% end %>
