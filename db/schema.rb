@@ -15,11 +15,14 @@ ActiveRecord::Schema.define(version: 2021_03_30_192744) do
   create_table "flights", force: :cascade do |t|
     t.string "flight_number"
     t.string "from"
+    t.string "from_city"
     t.string "to"
+    t.string "to_city"
     t.string "departure_time"
     t.string "arrival_time"
     t.string "flight_duration"
     t.integer "price"
+    t.integer "seat_remain"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -31,6 +34,7 @@ ActiveRecord::Schema.define(version: 2021_03_30_192744) do
     t.string "traveler_last_name"
     t.string "traveler_gender"
     t.string "traveler_contact_info"
+    t.string "seat"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

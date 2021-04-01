@@ -7,6 +7,7 @@ class CreateTrips < ActiveRecord::Migration[6.1]
       t.string :traveler_last_name
       t.string :traveler_gender
       t.string :traveler_contact_info
+      t.string :seat
       t.timestamps
     end
   end
