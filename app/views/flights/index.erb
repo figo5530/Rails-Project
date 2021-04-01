@@ -1,34 +1,27 @@
-<section>
-    <div class="row">
-    <div class="center">
-<h2>Search for Flight</h2>
-<div class="search-form">
-<%= form_tag flights_path, method: :get do %>
-    <%= text_field_tag :flight_number, "Search by flight number" %>
-</div>
-    <div class="show-btn">
-    <%= submit_tag "Search" %>
-    </div>
- <% end %>  
-    </div>
+<section class="accomodation_area section_gap">
+    <div class="container">
+        <div class="section_title text-center">
+            <h2 class="title_color">Search for Flight</h2>
+            <p>&nbsp</p>
+            <%= form_tag flights_path, method: :get do %>
+                <%= text_field_tag :flight_number, "Search by flight number" %>
+                <p>&nbsp</p>
+                <%= submit_tag "Search", :class => "btn theme_btn button_hover" %>
+            <% end %>
+                <p>&nbsp</p>
+            <% if @flights.empty? %>
+                <div class="container">
+                <div class="section_title text-center">
+                <h2 class="title_color"><%= link_to "No Match", flights_path %></h2>
+                </div>
+                </div>
+            <% end %>
+        </div>
     </div>
 </section>
 
-<section class="section-flights">
-    <div class="row">
-        <h2>All Flights</h2>
-    </div>
-    <% @flights.each.with_index do |f, i| %>
-        <% if i%3 == 0 %>
-            <div class="row">
-        <% end %>
-        <div class="col span-1-of-3">
-            <p>From: <%= f.from %> To: <%= f.to %></p>
-            <p>Departure Time: <%= f.departure_time %> Arrival Time: <%= f.arrival_time %></p>
-                <%= button_to 'Flight Details', flight_path(f), method: :get%>
-        </div>
-        <% if i%3 == 2 || i == @flights.length-1 %>
-            </div>
-        <% end %>
+    <h2></h2>
+    <% @flights.each do |f| %>
+        <%= render partial: "flight_detail", locals: {f: f} %>
+        <p></p>
     <% end %>
-</section>

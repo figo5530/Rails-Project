@@ -1,4 +1,5 @@
 class FlightsController < ApplicationController
+    layout "layout"
     before_action :set_flight, except: [:index, :new, :create]
     
     def index

@@ -119,6 +119,7 @@ h2:after {
 /* ----------------------------------------------- */
 
 .section-flights {   
+    padding: 5px;
     color: #0ABAB5;
 }
 
