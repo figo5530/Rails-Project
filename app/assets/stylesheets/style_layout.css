@@ -372,13 +372,13 @@ button:focus {
 /*----------------------------------------------------*/
 /*============= Start banner_area css =============*/
 .banner_area {
-  background: #0ABAB5;
+  background: #0ABAB5;;
   position: relative;
   z-index: 1;
 }
 
 .banner_area .bg-parallax {
-  background: url("./images/banner_bg.jpg") no-repeat scroll center 0/cover;
+  background: url(../images/banner_bg.jpg) no-repeat scroll center 0/cover;
   opacity: 0.50;
 }
 

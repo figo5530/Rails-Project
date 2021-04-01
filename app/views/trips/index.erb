@@ -1,36 +1,88 @@
-
-<section>
-    <div class="row">
-    <div class="center">
-<h2>Search for Trip</h2>
-<div class="search-form">
-<%= form_tag user_trips_path(@user), method: :get do %>
-    <%= text_field_tag :traveler_first_name, "Search by Traveler first name" %>
-</div>
-    <div class="show-btn">
-    <%= submit_tag "Search" %>
-    </div>
- <% end %>  
-    </div>
+<section class="accomodation_area section_gap">
+    <div class="container">
+        <div class="section_title text-center">
+            <h2 class="title_color">Search for Trip</h2>
+            <p>&nbsp</p>
+            <%= form_tag user_trips_path(@user), method: :get do %>
+                <%= text_field_tag :traveler_first_name, "Search by Traveler first name" %>
+                <p>&nbsp</p>
+                <%= submit_tag "Search", :class => "btn theme_btn button_hover" %>
+            <% end %>
+                <p>&nbsp</p>
+            <% if @trips.empty? %>
+                <div class="container">
+                <div class="section_title text-center">
+                <h2 class="title_color"><%= link_to "No Match", flights_path %></h2>
+                </div>
+                </div>
+            <% end %>
+        </div>
     </div>
 </section>
 
-<section>
-    <div class="row">
-    <div class="center">
-<% if @trips %>
-    <% @trips.each do |t| %>
-        <ul>
-            <%= link_to 'Trip Detail', user_trip_path(@user, t) %>
-            <%= link_to 'Edit Trip', edit_user_trip_path(@user, t)%>
-        </ul>
-    <% end %>
-<% else %>
-    <h2>You have no trips, go <%= link_to 'create', flights_path %> one</h2>
+
+<% @trips.each do |t| %>
+    <div class="hotel_booking_area position">
+        <div class="container">
+            <div class="hotel_booking_table">
+                <div class="col-md-3">
+                    <h2>Traveler<br><%= t.traveler_first_name %> <%= t.traveler_last_name %></h2>
+                </div>
+                <div class="col-md-9">
+                    <div class="boking_table">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="book_tabel_item">
+                                    <div class="form-group">
+                                        <div class='input-group'>
+                                            <h6>Flight Number<br>
+                                            <p></p> 
+                                            <%= t.flight.flight_number %></h6>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class='input-group'>
+                                            <h6>From &nbsp To<br>
+                                            <p></p> 
+                                            <%= t.flight.from %>&nbsp&nbsp&nbsp&nbsp&nbsp<%= t.flight.to %></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="book_tabel_item">
+                                    <div class="input-group">
+                                        <h6>Departure Time<br>
+                                            <p></p>
+                                            <%= t.flight.departure_time %></h6>
+                                    </div>
+                                    <div class="input-group">
+                                        <h6>Arrival Time<br>
+                                            <p></p>
+                                            <%= t.flight.arrival_time %></h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="book_tabel_item">
+                                    <div class="input-group">
+                                        <h6>Traveler Contact Info<br>
+                                            <p></p>
+                                            <%= t.traveler_contact_info %></h6>
+                                    </div>
+                                    <p></p><br>
+                                    <%= link_to 'Trip Detail', user_trip_path(@user, t), :class => "book_now_btn button_hover"%>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <% end %>
-    <h3><%= link_to 'Create new trip', flights_path %></h3>
-    </div>
-    </div>
-</section>
+
+
 
 

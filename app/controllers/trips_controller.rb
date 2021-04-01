@@ -1,4 +1,5 @@
 class TripsController < ApplicationController
+    layout "layout"
     def index
         if params[:traveler_first_name]
             @trips = Trip.trip_search(params[:traveler_first_name])
