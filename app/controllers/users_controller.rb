@@ -3,11 +3,13 @@ class UsersController < ApplicationController
     before_action :home_page_if_logged_in, only: [:new]
     before_action :require_logged_in, only: [:show]
     layout "layout"
+    
     def home
         
     end
     def new
         @user = User.new
+        render :layout => 'signinup'
     end
 
     def create

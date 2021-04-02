@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
-    layout "layout"
+    layout "signinup"
+    # layout "layout"
     before_action :home_page_if_logged_in, except: [:destroy]
 
     def new

@@ -1,27 +1,37 @@
 
-<section class="banner_area">
-    <div class="booking_table d_flex align-items-center">
-        <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
-        <div class="container">
-            <div class="banner_content text-center">
-                <%= form_for(@user) do |f| %>
-                <h6><%= f.label :username %></h6>
-                <%= f.text_field :username %><br>
-                <h6><%= f.label :email %></h6>
-                <%= f.text_field :email %><br>
-                <h6><%= f.label :password %></h6>
-                <%= f.password_field :password %><br>
-                <h6><%= f.label :password_confirmation %></h6>
-                <%= f.password_field :password_confirmation %><br>
+<section class="accomodation_area section_gap">
+    <div class="container">
+        <div class="section_title text-center">
                 
-                <p>
-                <%= render partial: 'errors', locals: {errors: @errors} %>
-                </p>
-                <%= f.submit 'Sign Up', :class => "btn theme_btn button_hover" %>
+                <%= form_for(@user) do |f| %>
+                <h2>Sign Up</h2>
+                        <p>
+                            <%= f.label :username %>
+                            <%= f.text_field :username %>
+                        </p>
+                        <p>&nbsp</p>
+                        <p>
+                            <%= f.label :email %>
+                            <%= f.text_field :email %>
+                        </p>
+                        <p>&nbsp</p>
+                        <p>
+                            <%= f.label :password %>
+                            <%= f.text_field :password %>
+                        </p>
+                        <p>&nbsp</p>
+                        <p>
+                            <%= f.label :password_confirmation %>
+                            <%= f.text_field :password_confirmation %>
+                        </p>
+                        <p>
+                            <%= render partial: 'errors', locals: {errors: @errors} %>
+                        </p>
+                        <p>
+                            <%= f.submit 'Sign Up', :class => "btn theme_btn button_hover" %>
+                        </p>
                 <% end %>
-                <p></p>
-                <%= button_to "Sign Up With Facebook", '/auth/facebook', :class => "btn theme_btn button_hover"%>
-            </div>
+                <p><%= button_to "Sign Up With Facebook", '/auth/facebook', :class => "btn theme_btn button_hover"%></p>
         </div>
     </div>
 </section>

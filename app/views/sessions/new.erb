@@ -1,27 +1,27 @@
 
-<section class="banner_area">
-    <div class="booking_table d_flex align-items-center">
-        <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
-        <div class="container">
-            <div class="banner_content text-center">
+<section class="accomodation_area section_gap">
+    <div class="container">
+        <div class="section_title text-center">
                 
+            
+
                 <%= form_tag '/signin', method: :post do %>
-                <h6><%= label_tag :username %></h6>
-                <%= text_field_tag :username %><br>
-                <h6><%= label_tag :password %></h6>
-                <%= password_field_tag :password %><br>
-                
-                <p>
-                <%= render partial: 'users/errors', locals: {errors: @errors} %>
-                </p>
-                <p></p>
-                <%= submit_tag "Sign In", :class => "btn theme_btn button_hover" %>
-                
+                <h2>Sign In</h2>
+                        <p>
+                            <%= label_tag :username %>
+                            <%= text_field_tag :username %>
+                        </p>
+                        <p>&nbsp</p>
+                        <p>
+                            <%= label_tag :password %>
+                            <%= text_field_tag :password %>
+                        </p>
+                        <p><%= render partial: "users/errors", locals: {errors: @errors} %></p>
+                        <p>
+                            <%= submit_tag "Sign In", :class => "btn theme_btn button_hover" %>
+                        </p>
                 <% end %>
-                <p></p>
                 <%= button_to "Sign In With Facebook", '/auth/facebook', :class => "btn theme_btn button_hover"%>
-            </div>
         </div>
     </div>
 </section>
-
